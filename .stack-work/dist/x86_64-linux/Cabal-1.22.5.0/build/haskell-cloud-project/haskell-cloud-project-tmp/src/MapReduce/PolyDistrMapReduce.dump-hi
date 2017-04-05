@@ -1,0 +1,2456 @@
+
+==================== FINAL INTERFACE ====================
+2017-04-05 15:43:11.242295 UTC
+
+interface main@main:PolyDistrMapReduce 7103
+  interface hash: fe0ee4c78b8e8b6918d2ab1aa72187d4
+  ABI hash: 77d24c434a1daffd44745852d824e153
+  export-list hash: 513ed597a4d1bc3acb10ec09ed39af68
+  orphan hash: c310d4ca6c1cb47d8a0fb75fe29cc369
+  flag hash: b0d64376b35260c6f86b3e5af9c245cf
+  sig of: Nothing
+  used TH splices: True
+  where
+exports:
+  PolyDistrMapReduce.__remoteTable
+  PolyDistrMapReduce.distrMapReduce
+module dependencies: MapReduce
+package dependencies: array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA
+                      base-4.8.2.0 binary-0.7.5.0@binar_3uXFWMoAGBg0xKP9MHKRwi
+                      bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6
+                      containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU
+                      data-accessor-0.2.2.7@dataa_Hzzw7HtnPRc9zDbsSXo8GC
+                      deepseq-1.4.1.1@deeps_6vMKxt5sPFR0XsbRWvvq59
+                      distributed-process-0.6.6@distr_9VZaEnFgXxwKrMu3maGgik
+                      distributed-static-0.3.5.0@distr_JJqLBLOCLpw71ShSeQFdQF
+                      exceptions-0.8.3@excep_BEih2K3eMGTE4cg5iulra8 ghc-prim-0.4.0.0
+                      hashable-1.2.4.0@hasha_EalUWgp8NarBYWPbvYAD8I integer-gmp-1.0.0.0
+                      mtl-2.2.1@mtl_Aue4leSeVkpKLsfHIV51E8
+                      network-transport-0.4.4.0@netwo_6bCeDA9MYREG46JvDrzSZS
+                      pretty-1.1.2.0@prett_JItwetRppk1H5Uq3xbjDGC
+                      random-1.1@rando_9Kgekc9yEaLHLNUuw6paWL
+                      rank1dynamic-0.3.3.0@rank1_GXsj45YFP8FHL10Mvwk235
+                      stm-2.4.4.1@stm_EyxFXFfnfY05IrjGaqCxeD
+                      syb-0.6@syb_4kccWaTe3QZLxAMQYKgEyE template-haskell-2.10.0.0
+                      text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne
+                      time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn
+                      transformers-0.4.2.0@trans_GZTjP9K5WFq01xC9BAGQpF
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+         binary-0.7.5.0@binar_3uXFWMoAGBg0xKP9MHKRwi:Data.Binary.Generic
+         bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6:Data.ByteString.Builder
+         hashable-1.2.4.0@hasha_EalUWgp8NarBYWPbvYAD8I:Data.Hashable.Generic
+         stm-2.4.4.1@stm_EyxFXFfnfY05IrjGaqCxeD:Control.Monad.STM
+         syb-0.6@syb_4kccWaTe3QZLxAMQYKgEyE:Data.Generics.Instances
+         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text
+         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text.Lazy
+         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text.Show
+         time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time.Calendar.Gregorian
+         time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time.Format.Parse
+         time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time.LocalTime.LocalTime
+         transformers-0.4.2.0@trans_GZTjP9K5WFq01xC9BAGQpF:Control.Monad.Trans.Error
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Functor.Identity
+                         base-4.8.2.0:Data.Monoid base-4.8.2.0:Data.Type.Equality
+                         base-4.8.2.0:Data.Void base-4.8.2.0:GHC.Exts
+                         base-4.8.2.0:GHC.Generics
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.IntMap.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.IntSet.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Sequence
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Set.Base
+                         distributed-process-0.6.6@distr_9VZaEnFgXxwKrMu3maGgik:Control.Distributed.Process.Internal.Types
+                         distributed-process-0.6.6@distr_9VZaEnFgXxwKrMu3maGgik:Control.Distributed.Process.Management.Internal.Table
+                         distributed-process-0.6.6@distr_9VZaEnFgXxwKrMu3maGgik:Control.Distributed.Process.Management.Internal.Trace.Types
+                         distributed-process-0.6.6@distr_9VZaEnFgXxwKrMu3maGgik:Control.Distributed.Process.Management.Internal.Types
+                         network-transport-0.4.4.0@netwo_6bCeDA9MYREG46JvDrzSZS:Network.Transport
+                         pretty-1.1.2.0@prett_JItwetRppk1H5Uq3xbjDGC:Text.PrettyPrint.HughesPJ
+                         template-haskell-2.10.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text
+                         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text.Lazy
+import  -/  base-4.8.2.0:Control.Monad 480c5067477275068c9b98be08410df9
+import  -/  base-4.8.2.0:Data.Foldable 2ce969969ad5231eb40bd713f94f05ad
+import  -/  base-4.8.2.0:Data.Typeable c3fcb0780ec05399195ad3277b18d294
+import  -/  base-4.8.2.0:Data.Typeable.Internal 76b09e88499fa4ff7869a34e89976afb
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  binary-0.7.5.0@binar_3uXFWMoAGBg0xKP9MHKRwi:Data.Binary 8384d103fc9149c36c5489e79a596d51
+import  -/  bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6:Data.ByteString.Lazy 7f48d46f600589dfd94d36d5fcf54f5b
+import  -/  bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6:Data.ByteString.Lazy.Internal dc0c348a11f4ab8681c713e3b946d31c
+import  -/  containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map 1800ccac43fd924c376b60eac12f4d04
+import  -/  containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map.Base 642e37808d03e24efbe8e8ff1336f343
+import  -/  distributed-process-0.6.6@distr_9VZaEnFgXxwKrMu3maGgik:Control.Distributed.Process 86f028da50d3c701496e9b31d4794722
+import  -/  distributed-process-0.6.6@distr_9VZaEnFgXxwKrMu3maGgik:Control.Distributed.Process.Closure 67f76da5442e0b1004d46cd93cb229ee
+import  -/  distributed-process-0.6.6@distr_9VZaEnFgXxwKrMu3maGgik:Control.Distributed.Process.Internal.Closure.BuiltIn 77ae4c257e80b1bd46043c94e53e22bd
+import  -/  distributed-process-0.6.6@distr_9VZaEnFgXxwKrMu3maGgik:Control.Distributed.Process.Internal.Closure.TH 515b2cd9968a327e4e1ad12a872959c6
+import  -/  distributed-process-0.6.6@distr_9VZaEnFgXxwKrMu3maGgik:Control.Distributed.Process.Internal.Primitives 678661c6385dfc8723f1a82fa175b3be
+import  -/  distributed-process-0.6.6@distr_9VZaEnFgXxwKrMu3maGgik:Control.Distributed.Process.Internal.Spawn c16b7fdaad32c2605c8f5520d06d9059
+import  -/  distributed-process-0.6.6@distr_9VZaEnFgXxwKrMu3maGgik:Control.Distributed.Process.Internal.Types 04c4c9c6c4e25a3c41f7f0a5dab92823
+import  -/  distributed-process-0.6.6@distr_9VZaEnFgXxwKrMu3maGgik:Control.Distributed.Process.Serializable ddfcc3b11eb074dead990ad7a076ed9b
+import  -/  distributed-static-0.3.5.0@distr_JJqLBLOCLpw71ShSeQFdQF:Control.Distributed.Static 298d1d8e8cb149ff7c7e81c09550a87c
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+import  -/  MapReduce 5556cd11811b0234831661716bdb600a
+  exports: ec8d6e4dededa0919450aaa3f9425d9f
+  MapReduce 4c3fbf994626b48a538779768ef7c8d9
+  groupByKey b1897444d5414a112a18dde1856df86e
+  mrMap c60c5dcc00b2960e3096b707e6201e85
+  reducePerKey b22e38020c6079f1c4e16d68fe506e16
+import  -/  rank1dynamic-0.3.3.0@rank1_GXsj45YFP8FHL10Mvwk235:Data.Rank1Dynamic 10b9168e677cbcd3d256f66a634c0b75
+import  -/  rank1dynamic-0.3.3.0@rank1_GXsj45YFP8FHL10Mvwk235:Data.Rank1Typeable 8fcf5b67c65976891a2cb3bcc70a8890
+addDependentFile "/home/kanika/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/include/ghcversion.h"
+addDependentFile ".stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/autogen/cabal_macros.h"
+addDependentFile "/usr/include/stdc-predef.h"
+ab27c73fb1c47ccc672775fed3aebe60
+  $s$fBinary(,) ::
+    Data.Binary.Class.Binary
+      (Control.Distributed.Process.Internal.Types.ProcessId,
+       Control.Distributed.Process.Internal.Types.ProcessId)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (Control.Distributed.Process.Internal.Types.ProcessId,
+                     Control.Distributed.Process.Internal.Types.ProcessId)
+                  (Data.Binary.Class.$fBinary(,)_$cput
+                     @ Control.Distributed.Process.Internal.Types.ProcessId
+                     @ Control.Distributed.Process.Internal.Types.ProcessId
+                     Control.Distributed.Process.Internal.Types.$fBinaryProcessId
+                     Control.Distributed.Process.Internal.Types.$fBinaryProcessId)
+                  (Data.Binary.Class.$fBinary(,)_$cget
+                     @ Control.Distributed.Process.Internal.Types.ProcessId
+                     @ Control.Distributed.Process.Internal.Types.ProcessId
+                     Control.Distributed.Process.Internal.Types.$fBinaryProcessId
+                     Control.Distributed.Process.Internal.Types.$fBinaryProcessId) -}
+7d093ed64f82e216ad0d13b0ee7b0a58
+  $s$wreplicateM_1 ::
+    GHC.Prim.Int#
+    -> Control.Distributed.Process.Internal.Types.Process a3
+    -> Control.Distributed.Process.Internal.Types.LocalProcess
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><L,U>,
+     Unfolding: (\ @ a15
+                   ww :: GHC.Prim.Int#
+                   w1 :: Control.Distributed.Process.Internal.Types.Process a15 ->
+                 PolyDistrMapReduce.$s$wreplicateM_2
+                   @ a15
+                   (case GHC.Prim.tagToEnum#
+                           @ GHC.Types.Bool
+                           (GHC.Prim.<# 0 ww) of wild {
+                      GHC.Types.False
+                      -> GHC.Types.[]
+                           @ (Control.Distributed.Process.Internal.Types.Process a15)
+                      GHC.Types.True
+                      -> let {
+                           lvl16 :: [Control.Distributed.Process.Internal.Types.Process a15]
+                           = GHC.Types.:
+                               @ (Control.Distributed.Process.Internal.Types.Process a15)
+                               w1
+                               (GHC.Types.[]
+                                  @ (Control.Distributed.Process.Internal.Types.Process a15))
+                         } in
+                         letrec {
+                           $wxs :: GHC.Prim.Int#
+                                   -> [Control.Distributed.Process.Internal.Types.Process a15]
+                             {- Arity: 1, Strictness: <S,1*U>, Inline: [0] -}
+                           = \ ww1 :: GHC.Prim.Int# ->
+                             case ww1 of ds1 {
+                               DEFAULT
+                               -> GHC.Types.:
+                                    @ (Control.Distributed.Process.Internal.Types.Process a15)
+                                    w1
+                                    ($wxs (GHC.Prim.-# ds1 1))
+                               1 -> lvl16 }
+                         } in
+                         $wxs ww })) -}
+8623c4d3c17a6529754780478b3c1614
+  $s$wreplicateM_2 ::
+    [Control.Distributed.Process.Internal.Types.Process a3]
+    -> Control.Distributed.Process.Internal.Types.LocalProcess
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 3, HasNoCafRefs, Strictness: <S,1*U><L,U><L,U> -}
+36d1f8889604ef07a0f8d0b8283db9cd
+  $smatch1 ::
+    Control.Distributed.Process.Serializable.Serializable ()
+  {- Unfolding: (Control.Distributed.Process.Serializable.$fSerializablea
+                   @ ()
+                   Data.Binary.Class.$fBinary()
+                   PolyDistrMapReduce.$smatch2
+                     `cast`
+                   (Sym (Data.Typeable.Internal.NTCo:Typeable[0] <*>_N <()>_N))) -}
+0404f011cc53217ea1d0f4a90addfab9
+  $smatch2 :: GHC.Prim.Proxy# () -> Data.Typeable.Internal.TypeRep
+  {- Arity: 1, Strictness: <L,A>m,
+     Unfolding: InlineRule (1, True, True)
+                (\ wild :: GHC.Prim.Proxy# () -> PolyDistrMapReduce.$smatch3) -}
+e546a3c448177291b6134e333aa7268b
+  $smatch3 :: Data.Typeable.Internal.TypeRep
+  {- Strictness: m,
+     Unfolding: (Data.Typeable.Internal.TypeRep
+                   __word 15843165073189925570
+                   __word 13730769858450861905
+                   PolyDistrMapReduce.$smatch_wild
+                   (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)) -}
+55da08dee9ca889090f809efdb0d8d88
+  $smatch_wild :: Data.Typeable.Internal.TyCon
+  {- Strictness: m,
+     Unfolding: (Data.Typeable.Internal.TyCon
+                   __word 15843165073189925570
+                   __word 13730769858450861905
+                   PolyDistrMapReduce.$smatch_ww2
+                   PolyDistrMapReduce.$smatch_ww3
+                   PolyDistrMapReduce.$smatch_ww4) -}
+148ddf776938e051269804cc8af302a0
+  $smatch_ww2 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# "ghc-prim"#) -}
+494188fb2a83148ea91dcdcdb71c02c3
+  $smatch_ww3 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# "GHC.Tuple"#) -}
+a06b8f8d825ebf7b770698e7b3101bfc
+  $smatch_ww4 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# "()"#) -}
+911f1015e64c7f74beeed587b75085e1
+  $sreplicateM2 ::
+    [Control.Distributed.Process.Internal.Types.Process a3]
+    -> Control.Distributed.Process.Internal.Types.LocalProcess
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, [a3] #)
+  {- Arity: 3, HasNoCafRefs, Strictness: <S,1*U><L,U><L,U> -}
+83aa0a227f4848679ab01050441fd661
+  $stoDynamic15 :: GHC.Fingerprint.Type.Fingerprint
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Fingerprint.Type.Fingerprint
+                   __word 11348492752159865867
+                   __word 15112955730117169623) -}
+99105bde159925ed0b6a1b8e47cea6bb
+  $stoDynamic16 :: Data.Typeable.Internal.TyCon
+  {- Unfolding: (Data.Typeable.Internal.TyCon
+                   __word 11348492752159865867
+                   __word 15112955730117169623
+                   PolyDistrMapReduce.$stoDynamic_ww3
+                   PolyDistrMapReduce.$stoDynamic_ww6
+                   PolyDistrMapReduce.$stoDynamic17) -}
+b25316247a7926fcd1f9592fb266c15d
+  $stoDynamic17 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Process"#) -}
+b9a7a1236ffcc7ed43697d27324c0ef1
+  $stoDynamic18 :: [Data.Typeable.Internal.TypeRep]
+  {- Unfolding: (GHC.Types.:
+                   @ Data.Typeable.Internal.TypeRep
+                   PolyDistrMapReduce.$smatch3
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)) -}
+5166cc4467e68d816fc41f8286905b2e
+  $stoDynamic2 :: GHC.Fingerprint.Type.Fingerprint
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Fingerprint.Type.Fingerprint
+                   __word 178358391531745606
+                   __word 14321957899964785745) -}
+4cec98feca82462c9019f553f6334e10
+  $stoDynamic21 :: GHC.Fingerprint.Type.Fingerprint
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Fingerprint.Type.Fingerprint
+                   __word 1091321823365361407
+                   __word 18149233857709920763) -}
+831f0c8b9dcff35c4a5c0bb0dc548dab
+  $stoDynamic24 :: GHC.Fingerprint.Type.Fingerprint
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Fingerprint.Type.Fingerprint
+                   __word 18238882603930935023
+                   __word 1941364615484687110) -}
+230353a70bb7775e6c0e3cb8e0fcc951
+  $stoDynamic27 :: GHC.Fingerprint.Type.Fingerprint
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Fingerprint.Type.Fingerprint
+                   __word 1421928894227420842
+                   __word 3564869376365145663) -}
+78073e27875f2f3e5ccec8c6f3640e84
+  $stoDynamic28 :: [Data.Typeable.Internal.TypeRep]
+  {- Unfolding: (GHC.Types.:
+                   @ Data.Typeable.Internal.TypeRep
+                   PolyDistrMapReduce.$stoDynamic29
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)) -}
+052377ab5b548063941bfb7b6e502a36
+  $stoDynamic29 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case PolyDistrMapReduce.$stoDynamic_w2 of wild2 {
+                   []
+                   -> Data.Typeable.Internal.TypeRep
+                        __word 1421928894227420842
+                        __word 3564869376365145663
+                        PolyDistrMapReduce.$stoDynamic_wild2
+                        (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   : ipv ipv1
+                   -> case GHC.Fingerprint.fingerprintFingerprints
+                             PolyDistrMapReduce.$stoDynamic30 of dt1 { GHC.Fingerprint.Type.Fingerprint dt2 dt3 ->
+                      Data.Typeable.Internal.TypeRep
+                        dt2
+                        dt3
+                        PolyDistrMapReduce.$stoDynamic_wild2
+                        (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                        wild2 } }) -}
+0e2b9b8e17422a283792f2df695a4404
+  $stoDynamic30 :: [GHC.Fingerprint.Type.Fingerprint]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Fingerprint.Type.Fingerprint
+                   PolyDistrMapReduce.$stoDynamic27
+                   PolyDistrMapReduce.$stoDynamic31) -}
+ad1046efa6fb9a76e69c837d849b5157
+  $stoDynamic31 :: [GHC.Fingerprint.Type.Fingerprint]
+  {- Unfolding: (PolyDistrMapReduce.$stoDynamic_go2
+                   (GHC.Types.[] @ Data.Typeable.Internal.KindRep)) -}
+4fef3aaabb68dab7ffa56e29367bae74
+  $stoDynamic32 :: [Data.Typeable.Internal.TypeRep]
+  {- Unfolding: (GHC.Types.:
+                   @ Data.Typeable.Internal.TypeRep
+                   PolyDistrMapReduce.$stoDynamic33
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)) -}
+fc07c8f76bc923c3443da0574cf13f20
+  $stoDynamic33 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case PolyDistrMapReduce.$stoDynamic_w3 of wild2 {
+                   []
+                   -> Data.Typeable.Internal.TypeRep
+                        __word 1421928894227420842
+                        __word 3564869376365145663
+                        PolyDistrMapReduce.$stoDynamic_wild2
+                        (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   : ipv ipv1
+                   -> case GHC.Fingerprint.fingerprintFingerprints
+                             PolyDistrMapReduce.$stoDynamic34 of dt1 { GHC.Fingerprint.Type.Fingerprint dt2 dt3 ->
+                      Data.Typeable.Internal.TypeRep
+                        dt2
+                        dt3
+                        PolyDistrMapReduce.$stoDynamic_wild2
+                        (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                        wild2 } }) -}
+1d702bd06b0dac20ed3a3147f8918bfc
+  $stoDynamic34 :: [GHC.Fingerprint.Type.Fingerprint]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Fingerprint.Type.Fingerprint
+                   PolyDistrMapReduce.$stoDynamic27
+                   PolyDistrMapReduce.$stoDynamic35) -}
+75b792dae225176034d19fc846ecaed1
+  $stoDynamic35 :: [GHC.Fingerprint.Type.Fingerprint]
+  {- Unfolding: (PolyDistrMapReduce.$stoDynamic_go3
+                   (GHC.Types.[] @ Data.Typeable.Internal.KindRep)) -}
+46c5a3f85e20cc944bddcae29b8a9347
+  $stoDynamic36 :: [Data.Typeable.Internal.TypeRep]
+  {- Unfolding: (GHC.Types.:
+                   @ Data.Typeable.Internal.TypeRep
+                   PolyDistrMapReduce.$stoDynamic37
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)) -}
+9ab1b10129e418735280e2603bae59bd
+  $stoDynamic37 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case PolyDistrMapReduce.$stoDynamic_w4 of wild2 {
+                   []
+                   -> Data.Typeable.Internal.TypeRep
+                        __word 1421928894227420842
+                        __word 3564869376365145663
+                        PolyDistrMapReduce.$stoDynamic_wild2
+                        (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   : ipv ipv1
+                   -> case GHC.Fingerprint.fingerprintFingerprints
+                             PolyDistrMapReduce.$stoDynamic38 of dt1 { GHC.Fingerprint.Type.Fingerprint dt2 dt3 ->
+                      Data.Typeable.Internal.TypeRep
+                        dt2
+                        dt3
+                        PolyDistrMapReduce.$stoDynamic_wild2
+                        (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                        wild2 } }) -}
+eda36a759f4f7791e1b46ebd39c34a46
+  $stoDynamic38 :: [GHC.Fingerprint.Type.Fingerprint]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Fingerprint.Type.Fingerprint
+                   PolyDistrMapReduce.$stoDynamic27
+                   PolyDistrMapReduce.$stoDynamic39) -}
+2158b398e738323baeb2c1dc80ef19a1
+  $stoDynamic39 :: [GHC.Fingerprint.Type.Fingerprint]
+  {- Unfolding: (PolyDistrMapReduce.$stoDynamic_go4
+                   (GHC.Types.[] @ Data.Typeable.Internal.KindRep)) -}
+22c9cdf9a42ce386c8cb1141f75256ff
+  $stoDynamic40 :: [Data.Typeable.Internal.TypeRep]
+  {- Unfolding: (GHC.Types.:
+                   @ Data.Typeable.Internal.TypeRep
+                   PolyDistrMapReduce.$stoDynamic41
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)) -}
+da641a6c33506d544330c8283c9dd39f
+  $stoDynamic41 :: Data.Typeable.Internal.TypeRep
+  {- Strictness: m,
+     Unfolding: (Data.Typeable.Internal.TypeRep
+                   __word 10459537152423557831
+                   __word 4013083274961966047
+                   PolyDistrMapReduce.$stoDynamic_wild3
+                   (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)) -}
+f7447f6ae17f9ac1b617bee59587a117
+  $stoDynamic42 :: [Data.Typeable.Internal.TypeRep]
+  {- Unfolding: (GHC.Types.:
+                   @ Data.Typeable.Internal.TypeRep
+                   PolyDistrMapReduce.$stoDynamic43
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)) -}
+ae631ebfed14c8318b6cfb31d6423ed4
+  $stoDynamic43 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case PolyDistrMapReduce.$stoDynamic_w1 of wild2 {
+                   []
+                   -> Data.Typeable.Internal.TypeRep
+                        __word 18238882603930935023
+                        __word 1941364615484687110
+                        PolyDistrMapReduce.$stoDynamic_wild1
+                        (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   : ipv ipv1
+                   -> case GHC.Fingerprint.fingerprintFingerprints
+                             PolyDistrMapReduce.$stoDynamic44 of dt1 { GHC.Fingerprint.Type.Fingerprint dt2 dt3 ->
+                      Data.Typeable.Internal.TypeRep
+                        dt2
+                        dt3
+                        PolyDistrMapReduce.$stoDynamic_wild1
+                        (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                        wild2 } }) -}
+24d41d36b24b6fb69939fb355d142088
+  $stoDynamic44 :: [GHC.Fingerprint.Type.Fingerprint]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Fingerprint.Type.Fingerprint
+                   PolyDistrMapReduce.$stoDynamic24
+                   PolyDistrMapReduce.$stoDynamic45) -}
+2f2180c6159b68fa80ebba06ee5d4951
+  $stoDynamic45 :: [GHC.Fingerprint.Type.Fingerprint]
+  {- Unfolding: (PolyDistrMapReduce.$stoDynamic_go5
+                   (GHC.Types.[] @ Data.Typeable.Internal.KindRep)) -}
+638edc4f4993bbb2134393eccc7ff26f
+  $stoDynamic46 :: [Data.Typeable.Internal.TypeRep]
+  {- Unfolding: (GHC.Types.:
+                   @ Data.Typeable.Internal.TypeRep
+                   PolyDistrMapReduce.$stoDynamic47
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)) -}
+031e9ca9f0bf146d5e0bc07567617f73
+  $stoDynamic47 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case PolyDistrMapReduce.$stoDynamic_w2 of wild2 {
+                   []
+                   -> Data.Typeable.Internal.TypeRep
+                        __word 18238882603930935023
+                        __word 1941364615484687110
+                        PolyDistrMapReduce.$stoDynamic_wild1
+                        (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   : ipv ipv1
+                   -> case GHC.Fingerprint.fingerprintFingerprints
+                             PolyDistrMapReduce.$stoDynamic48 of dt1 { GHC.Fingerprint.Type.Fingerprint dt2 dt3 ->
+                      Data.Typeable.Internal.TypeRep
+                        dt2
+                        dt3
+                        PolyDistrMapReduce.$stoDynamic_wild1
+                        (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                        wild2 } }) -}
+543a65fa0b5fd69198eacbe61d821acd
+  $stoDynamic48 :: [GHC.Fingerprint.Type.Fingerprint]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Fingerprint.Type.Fingerprint
+                   PolyDistrMapReduce.$stoDynamic24
+                   PolyDistrMapReduce.$stoDynamic49) -}
+3ca23683f87c010e352fe9daa7f9a2c7
+  $stoDynamic49 :: [GHC.Fingerprint.Type.Fingerprint]
+  {- Unfolding: (PolyDistrMapReduce.$stoDynamic_go6
+                   (GHC.Types.[] @ Data.Typeable.Internal.KindRep)) -}
+88e7acf4e3fa60565ed2d81297975ec7
+  $stoDynamic50 :: [Data.Typeable.Internal.TypeRep]
+  {- Unfolding: (GHC.Types.:
+                   @ Data.Typeable.Internal.TypeRep
+                   PolyDistrMapReduce.$stoDynamic51
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)) -}
+71c1cd18ca48b2eca0ee73bde10c1328
+  $stoDynamic51 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case PolyDistrMapReduce.$stoDynamic_w3 of wild2 {
+                   []
+                   -> Data.Typeable.Internal.TypeRep
+                        __word 18238882603930935023
+                        __word 1941364615484687110
+                        PolyDistrMapReduce.$stoDynamic_wild1
+                        (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   : ipv ipv1
+                   -> case GHC.Fingerprint.fingerprintFingerprints
+                             PolyDistrMapReduce.$stoDynamic52 of dt1 { GHC.Fingerprint.Type.Fingerprint dt2 dt3 ->
+                      Data.Typeable.Internal.TypeRep
+                        dt2
+                        dt3
+                        PolyDistrMapReduce.$stoDynamic_wild1
+                        (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                        wild2 } }) -}
+908b20b2127f21c77e843ae8ffba29b1
+  $stoDynamic52 :: [GHC.Fingerprint.Type.Fingerprint]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Fingerprint.Type.Fingerprint
+                   PolyDistrMapReduce.$stoDynamic24
+                   PolyDistrMapReduce.$stoDynamic53) -}
+acf72fdeb997a4e4e638bfab6ae06722
+  $stoDynamic53 :: [GHC.Fingerprint.Type.Fingerprint]
+  {- Unfolding: (PolyDistrMapReduce.$stoDynamic_go7
+                   (GHC.Types.[] @ Data.Typeable.Internal.KindRep)) -}
+72d8418bdafd5b597a287b18cfee950c
+  $stoDynamic54 :: [Data.Typeable.Internal.TypeRep]
+  {- Unfolding: (GHC.Types.:
+                   @ Data.Typeable.Internal.TypeRep
+                   PolyDistrMapReduce.$stoDynamic55
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)) -}
+6aefa1ff2a24dfc2b384f86a752570a2
+  $stoDynamic55 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case PolyDistrMapReduce.$stoDynamic_w4 of wild2 {
+                   []
+                   -> Data.Typeable.Internal.TypeRep
+                        __word 18238882603930935023
+                        __word 1941364615484687110
+                        PolyDistrMapReduce.$stoDynamic_wild1
+                        (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   : ipv ipv1
+                   -> case GHC.Fingerprint.fingerprintFingerprints
+                             PolyDistrMapReduce.$stoDynamic56 of dt1 { GHC.Fingerprint.Type.Fingerprint dt2 dt3 ->
+                      Data.Typeable.Internal.TypeRep
+                        dt2
+                        dt3
+                        PolyDistrMapReduce.$stoDynamic_wild1
+                        (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                        wild2 } }) -}
+26ae4cf939131336b87b769adf65e2e0
+  $stoDynamic56 :: [GHC.Fingerprint.Type.Fingerprint]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Fingerprint.Type.Fingerprint
+                   PolyDistrMapReduce.$stoDynamic24
+                   PolyDistrMapReduce.$stoDynamic57) -}
+7233b25e4d313af6bcec43d4bc2bb5e5
+  $stoDynamic57 :: [GHC.Fingerprint.Type.Fingerprint]
+  {- Unfolding: (PolyDistrMapReduce.$stoDynamic_go8
+                   (GHC.Types.[] @ Data.Typeable.Internal.KindRep)) -}
+12c6bb147bc702f969d77b3194e8441a
+  $stoDynamic58 :: [Data.Typeable.Internal.TypeRep]
+  {- Unfolding: (GHC.Types.:
+                   @ Data.Typeable.Internal.TypeRep
+                   PolyDistrMapReduce.$stoDynamic59
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)) -}
+ae10786b550d6c7370bbe4a3b5781171
+  $stoDynamic59 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case PolyDistrMapReduce.$stoDynamic_w6 of wild2 {
+                   []
+                   -> Data.Typeable.Internal.TypeRep
+                        __word 17502837480397947244
+                        __word 15872498598114190556
+                        PolyDistrMapReduce.$stoDynamic_wild5
+                        (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   : ipv ipv1
+                   -> case GHC.Fingerprint.fingerprintFingerprints
+                             PolyDistrMapReduce.$stoDynamic62 of dt1 { GHC.Fingerprint.Type.Fingerprint dt2 dt3 ->
+                      case GHC.Base.++
+                             @ Data.Typeable.Internal.TypeRep
+                             wild2
+                             PolyDistrMapReduce.$stoDynamic60 of wild1 {
+                        []
+                        -> Data.Typeable.Internal.TypeRep
+                             __word 17502837480397947244
+                             __word 15872498598114190556
+                             (Data.Typeable.Internal.TyCon
+                                __word 17502837480397947244
+                                __word 15872498598114190556
+                                PolyDistrMapReduce.$smatch_ww2
+                                PolyDistrMapReduce.$smatch_ww3
+                                PolyDistrMapReduce.$stoDynamic_ww14)
+                             (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                             (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                        : ipv2 ipv3
+                        -> case GHC.Fingerprint.fingerprintFingerprints
+                                  (GHC.Types.:
+                                     @ GHC.Fingerprint.Type.Fingerprint
+                                     (GHC.Fingerprint.Type.Fingerprint
+                                        __word 17502837480397947244
+                                        __word 15872498598114190556)
+                                     (let {
+                                        z9 :: [GHC.Fingerprint.Type.Fingerprint]
+                                        = Data.Typeable.Internal.listTc_$sgo ipv2 ipv3
+                                      } in
+                                      letrec {
+                                        go1 :: [Data.Typeable.Internal.TypeRep]
+                                               -> [GHC.Fingerprint.Type.Fingerprint]
+                                          {- Arity: 1, Strictness: <S,1*U> -}
+                                        = \ ds :: [Data.Typeable.Internal.TypeRep] ->
+                                          case ds of wild3 {
+                                            [] -> z9
+                                            : y ys
+                                            -> case y of wild4 { Data.Typeable.Internal.TypeRep dt4 dt5 ds1 ds2 ds3 ->
+                                               GHC.Types.:
+                                                 @ GHC.Fingerprint.Type.Fingerprint
+                                                 (GHC.Fingerprint.Type.Fingerprint dt4 dt5)
+                                                 (go1 ys) } }
+                                      } in
+                                      go1
+                                        (GHC.Types.[]
+                                           @ Data.Typeable.Internal.KindRep))) of dt4 { GHC.Fingerprint.Type.Fingerprint dt5 dt6 ->
+                           Data.Typeable.Internal.TypeRep
+                             dt5
+                             dt6
+                             (Data.Typeable.Internal.TyCon
+                                __word 17502837480397947244
+                                __word 15872498598114190556
+                                PolyDistrMapReduce.$smatch_ww2
+                                PolyDistrMapReduce.$smatch_ww3
+                                PolyDistrMapReduce.$stoDynamic_ww14)
+                             (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                             wild1 } } } }) -}
+c0c41982fffe72fcab025dd56839daee
+  $stoDynamic60 :: [Data.Typeable.Internal.TypeRep]
+  {- Unfolding: (GHC.Types.:
+                   @ Data.Typeable.Internal.TypeRep
+                   PolyDistrMapReduce.$stoDynamic61
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)) -}
+459056a10b339c97adde8e55a7e5237b
+  $stoDynamic61 :: Data.Typeable.Internal.TypeRep
+  {- Strictness: m,
+     Unfolding: (Data.Typeable.Internal.TypeRep
+                   __word 4275815949923820108
+                   __word 17183938775917632475
+                   PolyDistrMapReduce.$stoDynamic_wild4
+                   (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)) -}
+b2f55d5da282aa81584a8a0fd94ade55
+  $stoDynamic62 :: [GHC.Fingerprint.Type.Fingerprint]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Fingerprint.Type.Fingerprint
+                   PolyDistrMapReduce.$stoDynamic64
+                   PolyDistrMapReduce.$stoDynamic63) -}
+66863ab985bef79ea66b84329f72da7a
+  $stoDynamic63 :: [GHC.Fingerprint.Type.Fingerprint]
+  {- Unfolding: (PolyDistrMapReduce.$stoDynamic_go9
+                   (GHC.Types.[] @ Data.Typeable.Internal.KindRep)) -}
+2cfb86d1afe0a770acbfcb4951c02596
+  $stoDynamic64 :: GHC.Fingerprint.Type.Fingerprint
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Fingerprint.Type.Fingerprint
+                   __word 17502837480397947244
+                   __word 15872498598114190556) -}
+48e9bcd66dd804d256166d25fff9489b
+  $stoDynamic69 :: GHC.Fingerprint.Type.Fingerprint
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Fingerprint.Type.Fingerprint
+                   __word 17730107610217102821
+                   __word 9866972337190828755) -}
+b01339d0522c7a817d3caee36afea80f
+  $stoDynamic70 :: Data.Typeable.Internal.TyCon
+  {- Unfolding: (Data.Typeable.Internal.TyCon
+                   __word 17730107610217102821
+                   __word 9866972337190828755
+                   PolyDistrMapReduce.$smatch_ww2
+                   PolyDistrMapReduce.$stoDynamic_ww17
+                   PolyDistrMapReduce.$stoDynamic_ww16) -}
+4e3dd3fb87e46b917367048a42d7e03d
+  $stoDynamic8 :: GHC.Fingerprint.Type.Fingerprint
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Fingerprint.Type.Fingerprint
+                   __word 16275961958878852713
+                   __word 3578558998586661682) -}
+19ab2633054d5ddf8dc2a86a8eeed833
+  $stoDynamic_go2 ::
+    [Data.Typeable.Internal.TypeRep]
+    -> [GHC.Fingerprint.Type.Fingerprint]
+  {- Arity: 1, Strictness: <S,1*U> -}
+33eacbdb05d290246007abd18fbb1dc3
+  $stoDynamic_go3 ::
+    [Data.Typeable.Internal.TypeRep]
+    -> [GHC.Fingerprint.Type.Fingerprint]
+  {- Arity: 1, Strictness: <S,1*U> -}
+ac1d4dd61883fe58cd7b57753642d4f3
+  $stoDynamic_go4 ::
+    [Data.Typeable.Internal.TypeRep]
+    -> [GHC.Fingerprint.Type.Fingerprint]
+  {- Arity: 1, Strictness: <S,1*U> -}
+449802f082bd69834cc89c86aec3950b
+  $stoDynamic_go5 ::
+    [Data.Typeable.Internal.TypeRep]
+    -> [GHC.Fingerprint.Type.Fingerprint]
+  {- Arity: 1, Strictness: <S,1*U> -}
+75d1d38537f4c6d50be9c126b144f09d
+  $stoDynamic_go6 ::
+    [Data.Typeable.Internal.TypeRep]
+    -> [GHC.Fingerprint.Type.Fingerprint]
+  {- Arity: 1, Strictness: <S,1*U> -}
+90fdee6afb1b255c310f70b388505451
+  $stoDynamic_go7 ::
+    [Data.Typeable.Internal.TypeRep]
+    -> [GHC.Fingerprint.Type.Fingerprint]
+  {- Arity: 1, Strictness: <S,1*U> -}
+44e5a15781c87bfa7bddebad069c598a
+  $stoDynamic_go8 ::
+    [Data.Typeable.Internal.TypeRep]
+    -> [GHC.Fingerprint.Type.Fingerprint]
+  {- Arity: 1, Strictness: <S,1*U> -}
+286550bfaf6297336ff4b9bf5c6dc479
+  $stoDynamic_go9 ::
+    [Data.Typeable.Internal.TypeRep]
+    -> [GHC.Fingerprint.Type.Fingerprint]
+  {- Arity: 1, Strictness: <S,1*U> -}
+b70286c9be62a2f6e29c356bc99d158f
+  $stoDynamic_w1 :: [Data.Typeable.Internal.TypeRep]
+  {- Unfolding: (GHC.Base.++
+                   @ Data.Typeable.Internal.TypeRep
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   PolyDistrMapReduce.$stoDynamic28) -}
+9a240807c9234bdf20b2a8faf18f1bc9
+  $stoDynamic_w2 :: [Data.Typeable.Internal.TypeRep]
+  {- Unfolding: (GHC.Base.++
+                   @ Data.Typeable.Internal.TypeRep
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   PolyDistrMapReduce.$stoDynamic32) -}
+b16789ed6b2dfc97fe7975187347ba64
+  $stoDynamic_w3 :: [Data.Typeable.Internal.TypeRep]
+  {- Unfolding: (GHC.Base.++
+                   @ Data.Typeable.Internal.TypeRep
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   PolyDistrMapReduce.$stoDynamic36) -}
+1c442dcc77c19cca966becf1ad13300f
+  $stoDynamic_w4 :: [Data.Typeable.Internal.TypeRep]
+  {- Unfolding: (GHC.Base.++
+                   @ Data.Typeable.Internal.TypeRep
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   PolyDistrMapReduce.$stoDynamic40) -}
+274c6995e09e6abba89a3f3b7531a117
+  $stoDynamic_w5 :: [Data.Typeable.Internal.TypeRep]
+  {- Unfolding: (GHC.Base.++
+                   @ Data.Typeable.Internal.TypeRep
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   PolyDistrMapReduce.$stoDynamic58) -}
+e2602e462930b60cba6eeed5f6183a77
+  $stoDynamic_w6 :: [Data.Typeable.Internal.TypeRep]
+  {- Unfolding: (GHC.Base.++
+                   @ Data.Typeable.Internal.TypeRep
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   PolyDistrMapReduce.$stoDynamic60) -}
+85156612b5feac46f4d370cdd0464e0a
+  $stoDynamic_wild :: Data.Typeable.Internal.TyCon
+  {- Strictness: m,
+     Unfolding: (Data.Typeable.Internal.TyCon
+                   __word 178358391531745606
+                   __word 14321957899964785745
+                   PolyDistrMapReduce.$stoDynamic_ww3
+                   PolyDistrMapReduce.$stoDynamic_ww4
+                   PolyDistrMapReduce.$stoDynamic_ww5) -}
+d2c810e4844c37c8b278614c0003122e
+  $stoDynamic_wild1 :: Data.Typeable.Internal.TyCon
+  {- Strictness: m,
+     Unfolding: (Data.Typeable.Internal.TyCon
+                   __word 18238882603930935023
+                   __word 1941364615484687110
+                   PolyDistrMapReduce.$stoDynamic_ww11
+                   PolyDistrMapReduce.$stoDynamic_ww10
+                   PolyDistrMapReduce.$stoDynamic_ww9) -}
+5db7da1eb38ae585c9b4fdf2f5cc676c
+  $stoDynamic_wild2 :: Data.Typeable.Internal.TyCon
+  {- Strictness: m,
+     Unfolding: (Data.Typeable.Internal.TyCon
+                   __word 1421928894227420842
+                   __word 3564869376365145663
+                   PolyDistrMapReduce.$stoDynamic_ww11
+                   PolyDistrMapReduce.$stoDynamic_ww10
+                   PolyDistrMapReduce.$stoDynamic_ww12) -}
+a4a11c8da1b3b3c63eb521c884cfa78f
+  $stoDynamic_wild3 :: Data.Typeable.Internal.TyCon
+  {- Strictness: m,
+     Unfolding: (Data.Typeable.Internal.TyCon
+                   __word 10459537152423557831
+                   __word 4013083274961966047
+                   PolyDistrMapReduce.$stoDynamic_ww11
+                   PolyDistrMapReduce.$stoDynamic_ww10
+                   PolyDistrMapReduce.$stoDynamic_ww13) -}
+a35b2fe8ce065d26fdfbba4d01155816
+  $stoDynamic_wild4 :: Data.Typeable.Internal.TyCon
+  {- Strictness: m,
+     Unfolding: (Data.Typeable.Internal.TyCon
+                   __word 4275815949923820108
+                   __word 17183938775917632475
+                   PolyDistrMapReduce.$stoDynamic_ww3
+                   PolyDistrMapReduce.$stoDynamic_ww6
+                   PolyDistrMapReduce.$stoDynamic_ww15) -}
+784c835d8645b38ebb59e7c739650e99
+  $stoDynamic_wild5 :: Data.Typeable.Internal.TyCon
+  {- Strictness: m,
+     Unfolding: (Data.Typeable.Internal.TyCon
+                   __word 17502837480397947244
+                   __word 15872498598114190556
+                   PolyDistrMapReduce.$smatch_ww2
+                   PolyDistrMapReduce.$smatch_ww3
+                   PolyDistrMapReduce.$stoDynamic_ww14) -}
+720c4577a2619562819ad908b17e2509
+  $stoDynamic_ww1 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# "(->)"#) -}
+f06959fa1b43cd5a2cfa33a7588d1482
+  $stoDynamic_ww10 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# "Data.Rank1Typeable"#) -}
+ad3811bc1895a04146f9ffe5918ab336
+  $stoDynamic_ww11 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "rank1_GXsj45YFP8FHL10Mvwk235"#) -}
+e4f7e997b8b1d0343a2d6402e6a96c39
+  $stoDynamic_ww12 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# "Succ"#) -}
+a8abf2599549de3f0d09b1f10bb8c7ae
+  $stoDynamic_ww13 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# "Zero"#) -}
+75f6e858100cf1132e4fcf18aa24612f
+  $stoDynamic_ww14 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# "(,)"#) -}
+27aa1f530584a2e19b195d773778e447
+  $stoDynamic_ww15 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# "ProcessId"#) -}
+275b8aa7e02482ec795da75f9a2b8202
+  $stoDynamic_ww16 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# "[]"#) -}
+f15ae255093771abfcfeb8d2da44debc
+  $stoDynamic_ww17 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# "GHC.Types"#) -}
+76aff16fe5786434866e0fa202efbb6d
+  $stoDynamic_ww2 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# "GHC.Prim"#) -}
+db30a69af1910be6740e3def99592f01
+  $stoDynamic_ww3 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "distr_9VZaEnFgXxwKrMu3maGgik"#) -}
+8424318d6a7290680b98317803616115
+  $stoDynamic_ww4 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Control.Distributed.Process.Serializable"#) -}
+17cfe2422bc8f5b6483dd23471b773ed
+  $stoDynamic_ww5 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# "SerializableDict"#) -}
+38232e8601f138d068d6c3db874cb3cd
+  $stoDynamic_ww6 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Control.Distributed.Process.Internal.Types"#) -}
+a06b1e67bc23dae6a48e43420e12e96e
+  $stoDynamic_ww7 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# "MapReduce"#) -}
+deaf979b45bbf14ba0a4afb160123e1a
+  $stoDynamic_ww8 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# "main"#) -}
+5597d6436edaeff1e7517fac425cfd46
+  $stoDynamic_ww9 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# "TypVar"#) -}
+5b737726f4edaa050924cb8e4eca783c
+  $w$j1 ::
+    GHC.Prim.Word#
+    -> GHC.Prim.Word#
+    -> GHC.Base.String
+    -> GHC.Base.String
+    -> GHC.Base.String
+    -> [Data.Typeable.Internal.KindRep]
+    -> [Data.Typeable.Internal.TypeRep]
+    -> (# GHC.Prim.Word#,
+          GHC.Prim.Word#,
+          Data.Typeable.Internal.TyCon,
+          [Data.Typeable.Internal.KindRep],
+          [Data.Typeable.Internal.TypeRep] #)
+  {- Arity: 7, Strictness: <L,U><L,U><L,U><L,U><L,U><S,U><L,1*U>,
+     Inline: [0],
+     Unfolding: (\ ww :: GHC.Prim.Word#[OneShot]
+                   ww1 :: GHC.Prim.Word#[OneShot]
+                   ww5 :: GHC.Base.String[OneShot]
+                   ww6 :: GHC.Base.String[OneShot]
+                   ww7 :: GHC.Base.String[OneShot]
+                   w :: [Data.Typeable.Internal.KindRep][OneShot]
+                   w1 :: [Data.Typeable.Internal.TypeRep][OneShot] ->
+                 case Data.Typeable.Internal.$wmkPolyTyConApp
+                        ww
+                        ww1
+                        ww5
+                        ww6
+                        ww7
+                        w
+                        (GHC.Base.++
+                           @ Data.Typeable.Internal.TypeRep
+                           w1
+                           PolyDistrMapReduce.$stoDynamic50) of ww8 { (#,,,,#) ww9 ww10 ww11 ww12 ww13 ->
+                 case ww11 of ww14 { Data.Typeable.Internal.TyCon ww15 ww16 ww17 ww18 ww19 ->
+                 case Data.Typeable.Internal.$wmkPolyTyConApp
+                        ww15
+                        ww16
+                        ww17
+                        ww18
+                        ww19
+                        ww12
+                        (GHC.Base.++
+                           @ Data.Typeable.Internal.TypeRep
+                           ww13
+                           PolyDistrMapReduce.$stoDynamic46) of ww20 { (#,,,,#) ww21 ww22 ww23 ww24 ww25 ->
+                 case ww23 of ww26 { Data.Typeable.Internal.TyCon ww27 ww28 ww29 ww30 ww31 ->
+                 case Data.Typeable.Internal.$wmkPolyTyConApp
+                        ww27
+                        ww28
+                        ww29
+                        ww30
+                        ww31
+                        ww24
+                        (GHC.Base.++
+                           @ Data.Typeable.Internal.TypeRep
+                           ww25
+                           PolyDistrMapReduce.$stoDynamic42) of ww32 { (#,,,,#) ww33 ww34 ww35 ww36 ww37 ->
+                 case ww35 of ww38 { Data.Typeable.Internal.TyCon ww39 ww40 ww41 ww42 ww43 ->
+                 Data.Typeable.Internal.$wmkPolyTyConApp
+                   ww39
+                   ww40
+                   ww41
+                   ww42
+                   ww43
+                   ww36
+                   (GHC.Base.++
+                      @ Data.Typeable.Internal.TypeRep
+                      ww37
+                      PolyDistrMapReduce.__remoteTable22) } } } } } }) -}
+0043e0d7e6db2dcffcd4cefb0d2b89cd
+  $wa ::
+    Control.Distributed.Process.Serializable.SerializableDict (k1, v1)
+    -> Control.Distributed.Process.Serializable.SerializableDict
+         [(k2, v2)]
+    -> Control.Distributed.Process.Internal.Types.ProcessId
+    -> Control.Distributed.Process.Internal.Types.ProcessId
+    -> MapReduce.MapReduce k1 v1 k2 v2 v3
+    -> Control.Distributed.Process.Internal.Types.LocalProcess
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 7,
+     Strictness: <L,U><L,U><L,U(U(U,U,U,U),U,U)><L,U(U(U,U,U,U),U,U)><L,U(C(C1(U)),A)><L,U(U,U,U(U,U,U),U,U,U)><L,U>,
+     Inline: [0] -}
+18350d554cd871c42f109c006eee1944
+  __remoteTable ::
+    Control.Distributed.Static.RemoteTable
+    -> Control.Distributed.Static.RemoteTable
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                PolyDistrMapReduce.__remoteTable1
+                  `cast`
+                (<Control.Distributed.Static.RemoteTable>_R
+                 ->_R Sym (Control.Distributed.Static.NTCo:RemoteTable[0])) -}
+c7f38244dd759eb889a4268a540a9445
+  __remoteTable1 ::
+    Control.Distributed.Static.RemoteTable
+    -> Data.Map.Base.Map GHC.Base.String Data.Rank1Dynamic.Dynamic
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ x :: Control.Distributed.Static.RemoteTable ->
+                 Control.Distributed.Static.$sinsert_$sgo10
+                   @ Data.Rank1Dynamic.Dynamic
+                   PolyDistrMapReduce.__remoteTable_x
+                   PolyDistrMapReduce.__remoteTable7
+                   (Control.Distributed.Static.$sinsert_$sgo10
+                      @ Data.Rank1Dynamic.Dynamic
+                      PolyDistrMapReduce.__remoteTable6
+                      PolyDistrMapReduce.__remoteTable2
+                      x `cast` (Control.Distributed.Static.NTCo:RemoteTable[0]))) -}
+dbc030a1f730cf606eabb122d181193a
+  __remoteTable10 :: [GHC.Fingerprint.Type.Fingerprint]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Fingerprint.Type.Fingerprint
+                   PolyDistrMapReduce.$stoDynamic8
+                   PolyDistrMapReduce.__remoteTable11) -}
+843ebfbc79414243e685895846da9433
+  __remoteTable11 :: [GHC.Fingerprint.Type.Fingerprint]
+  {- Unfolding: (PolyDistrMapReduce.__remoteTable_go1
+                   (GHC.Types.[] @ Data.Typeable.Internal.KindRep)) -}
+572b129e6314d18ccec3a55a2c903e44
+  __remoteTable12 :: [Data.Typeable.Internal.TypeRep]
+  {- Unfolding: (GHC.Types.:
+                   @ Data.Typeable.Internal.TypeRep
+                   PolyDistrMapReduce.__remoteTable13
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)) -}
+c9fb60fdb2e1e92a2522a9f7d11e8b2a
+  __remoteTable13 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case GHC.Base.++
+                        @ Data.Typeable.Internal.TypeRep
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                        PolyDistrMapReduce.__remoteTable26 of wild2 {
+                   []
+                   -> case GHC.Base.++
+                             @ Data.Typeable.Internal.TypeRep
+                             (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                             PolyDistrMapReduce.__remoteTable14 of wild1 {
+                        []
+                        -> Data.Typeable.Internal.TypeRep
+                             __word 16275961958878852713
+                             __word 3578558998586661682
+                             (Data.Typeable.Internal.TyCon
+                                __word 16275961958878852713
+                                __word 3578558998586661682
+                                PolyDistrMapReduce.$smatch_ww2
+                                PolyDistrMapReduce.$stoDynamic_ww2
+                                PolyDistrMapReduce.$stoDynamic_ww1)
+                             (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                             (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                        : ipv ipv1
+                        -> case GHC.Fingerprint.fingerprintFingerprints
+                                  (GHC.Types.:
+                                     @ GHC.Fingerprint.Type.Fingerprint
+                                     (GHC.Fingerprint.Type.Fingerprint
+                                        __word 16275961958878852713
+                                        __word 3578558998586661682)
+                                     (let {
+                                        z9 :: [GHC.Fingerprint.Type.Fingerprint]
+                                        = Data.Typeable.Internal.listTc_$sgo ipv ipv1
+                                      } in
+                                      letrec {
+                                        go1 :: [Data.Typeable.Internal.TypeRep]
+                                               -> [GHC.Fingerprint.Type.Fingerprint]
+                                          {- Arity: 1, Strictness: <S,1*U> -}
+                                        = \ ds :: [Data.Typeable.Internal.TypeRep] ->
+                                          case ds of wild3 {
+                                            [] -> z9
+                                            : y ys
+                                            -> case y of wild4 { Data.Typeable.Internal.TypeRep dt1 dt2 ds1 ds2 ds3 ->
+                                               GHC.Types.:
+                                                 @ GHC.Fingerprint.Type.Fingerprint
+                                                 (GHC.Fingerprint.Type.Fingerprint dt1 dt2)
+                                                 (go1 ys) } }
+                                      } in
+                                      go1
+                                        (GHC.Types.[]
+                                           @ Data.Typeable.Internal.KindRep))) of dt1 { GHC.Fingerprint.Type.Fingerprint dt2 dt3 ->
+                           Data.Typeable.Internal.TypeRep
+                             dt2
+                             dt3
+                             (Data.Typeable.Internal.TyCon
+                                __word 16275961958878852713
+                                __word 3578558998586661682
+                                PolyDistrMapReduce.$smatch_ww2
+                                PolyDistrMapReduce.$stoDynamic_ww2
+                                PolyDistrMapReduce.$stoDynamic_ww1)
+                             (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                             wild1 } }
+                   : ipv ipv1
+                   -> case GHC.Fingerprint.fingerprintFingerprints
+                             (GHC.Types.:
+                                @ GHC.Fingerprint.Type.Fingerprint
+                                PolyDistrMapReduce.$stoDynamic8
+                                (let {
+                                   z9 :: [GHC.Fingerprint.Type.Fingerprint]
+                                   = Data.Typeable.Internal.listTc_$sgo ipv ipv1
+                                 } in
+                                 letrec {
+                                   go1 :: [Data.Typeable.Internal.TypeRep]
+                                          -> [GHC.Fingerprint.Type.Fingerprint]
+                                     {- Arity: 1, Strictness: <S,1*U> -}
+                                   = \ ds :: [Data.Typeable.Internal.TypeRep] ->
+                                     case ds of wild1 {
+                                       [] -> z9
+                                       : y ys
+                                       -> case y of wild4 { Data.Typeable.Internal.TypeRep dt1 dt2 ds1 ds2 ds3 ->
+                                          GHC.Types.:
+                                            @ GHC.Fingerprint.Type.Fingerprint
+                                            (GHC.Fingerprint.Type.Fingerprint dt1 dt2)
+                                            (go1 ys) } }
+                                 } in
+                                 go1
+                                   (GHC.Types.[]
+                                      @ Data.Typeable.Internal.KindRep))) of dt1 { GHC.Fingerprint.Type.Fingerprint dt2 dt3 ->
+                      case GHC.Base.++
+                             @ Data.Typeable.Internal.TypeRep
+                             wild2
+                             PolyDistrMapReduce.__remoteTable14 of wild1 {
+                        []
+                        -> Data.Typeable.Internal.TypeRep
+                             __word 16275961958878852713
+                             __word 3578558998586661682
+                             (Data.Typeable.Internal.TyCon
+                                __word 16275961958878852713
+                                __word 3578558998586661682
+                                PolyDistrMapReduce.$smatch_ww2
+                                PolyDistrMapReduce.$stoDynamic_ww2
+                                PolyDistrMapReduce.$stoDynamic_ww1)
+                             (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                             (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                        : ipv2 ipv3
+                        -> case GHC.Fingerprint.fingerprintFingerprints
+                                  (GHC.Types.:
+                                     @ GHC.Fingerprint.Type.Fingerprint
+                                     (GHC.Fingerprint.Type.Fingerprint
+                                        __word 16275961958878852713
+                                        __word 3578558998586661682)
+                                     (let {
+                                        z9 :: [GHC.Fingerprint.Type.Fingerprint]
+                                        = Data.Typeable.Internal.listTc_$sgo ipv2 ipv3
+                                      } in
+                                      letrec {
+                                        go1 :: [Data.Typeable.Internal.TypeRep]
+                                               -> [GHC.Fingerprint.Type.Fingerprint]
+                                          {- Arity: 1, Strictness: <S,1*U> -}
+                                        = \ ds :: [Data.Typeable.Internal.TypeRep] ->
+                                          case ds of wild3 {
+                                            [] -> z9
+                                            : y ys
+                                            -> case y of wild4 { Data.Typeable.Internal.TypeRep dt4 dt5 ds1 ds2 ds3 ->
+                                               GHC.Types.:
+                                                 @ GHC.Fingerprint.Type.Fingerprint
+                                                 (GHC.Fingerprint.Type.Fingerprint dt4 dt5)
+                                                 (go1 ys) } }
+                                      } in
+                                      go1
+                                        (GHC.Types.[]
+                                           @ Data.Typeable.Internal.KindRep))) of dt4 { GHC.Fingerprint.Type.Fingerprint dt5 dt6 ->
+                           Data.Typeable.Internal.TypeRep
+                             dt5
+                             dt6
+                             (Data.Typeable.Internal.TyCon
+                                __word 16275961958878852713
+                                __word 3578558998586661682
+                                PolyDistrMapReduce.$smatch_ww2
+                                PolyDistrMapReduce.$stoDynamic_ww2
+                                PolyDistrMapReduce.$stoDynamic_ww1)
+                             (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                             wild1 } } } }) -}
+13bf4930a0f44826268278fb544ad4d2
+  __remoteTable14 :: [Data.Typeable.Internal.TypeRep]
+  {- Unfolding: (GHC.Types.:
+                   @ Data.Typeable.Internal.TypeRep
+                   PolyDistrMapReduce.__remoteTable15
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)) -}
+59337df4c0a6944ff50d80abc16eca02
+  __remoteTable15 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case PolyDistrMapReduce.$stoDynamic_w5 of wild2 {
+                   []
+                   -> case GHC.Base.++
+                             @ Data.Typeable.Internal.TypeRep
+                             (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                             PolyDistrMapReduce.__remoteTable16 of wild1 {
+                        []
+                        -> Data.Typeable.Internal.TypeRep
+                             __word 16275961958878852713
+                             __word 3578558998586661682
+                             (Data.Typeable.Internal.TyCon
+                                __word 16275961958878852713
+                                __word 3578558998586661682
+                                PolyDistrMapReduce.$smatch_ww2
+                                PolyDistrMapReduce.$stoDynamic_ww2
+                                PolyDistrMapReduce.$stoDynamic_ww1)
+                             (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                             (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                        : ipv ipv1
+                        -> case GHC.Fingerprint.fingerprintFingerprints
+                                  (GHC.Types.:
+                                     @ GHC.Fingerprint.Type.Fingerprint
+                                     (GHC.Fingerprint.Type.Fingerprint
+                                        __word 16275961958878852713
+                                        __word 3578558998586661682)
+                                     (let {
+                                        z9 :: [GHC.Fingerprint.Type.Fingerprint]
+                                        = Data.Typeable.Internal.listTc_$sgo ipv ipv1
+                                      } in
+                                      letrec {
+                                        go1 :: [Data.Typeable.Internal.TypeRep]
+                                               -> [GHC.Fingerprint.Type.Fingerprint]
+                                          {- Arity: 1, Strictness: <S,1*U> -}
+                                        = \ ds :: [Data.Typeable.Internal.TypeRep] ->
+                                          case ds of wild3 {
+                                            [] -> z9
+                                            : y ys
+                                            -> case y of wild4 { Data.Typeable.Internal.TypeRep dt1 dt2 ds1 ds2 ds3 ->
+                                               GHC.Types.:
+                                                 @ GHC.Fingerprint.Type.Fingerprint
+                                                 (GHC.Fingerprint.Type.Fingerprint dt1 dt2)
+                                                 (go1 ys) } }
+                                      } in
+                                      go1
+                                        (GHC.Types.[]
+                                           @ Data.Typeable.Internal.KindRep))) of dt1 { GHC.Fingerprint.Type.Fingerprint dt2 dt3 ->
+                           Data.Typeable.Internal.TypeRep
+                             dt2
+                             dt3
+                             (Data.Typeable.Internal.TyCon
+                                __word 16275961958878852713
+                                __word 3578558998586661682
+                                PolyDistrMapReduce.$smatch_ww2
+                                PolyDistrMapReduce.$stoDynamic_ww2
+                                PolyDistrMapReduce.$stoDynamic_ww1)
+                             (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                             wild1 } }
+                   : ipv ipv1
+                   -> case GHC.Fingerprint.fingerprintFingerprints
+                             (GHC.Types.:
+                                @ GHC.Fingerprint.Type.Fingerprint
+                                PolyDistrMapReduce.$stoDynamic8
+                                (let {
+                                   z9 :: [GHC.Fingerprint.Type.Fingerprint]
+                                   = Data.Typeable.Internal.listTc_$sgo ipv ipv1
+                                 } in
+                                 letrec {
+                                   go1 :: [Data.Typeable.Internal.TypeRep]
+                                          -> [GHC.Fingerprint.Type.Fingerprint]
+                                     {- Arity: 1, Strictness: <S,1*U> -}
+                                   = \ ds :: [Data.Typeable.Internal.TypeRep] ->
+                                     case ds of wild1 {
+                                       [] -> z9
+                                       : y ys
+                                       -> case y of wild4 { Data.Typeable.Internal.TypeRep dt1 dt2 ds1 ds2 ds3 ->
+                                          GHC.Types.:
+                                            @ GHC.Fingerprint.Type.Fingerprint
+                                            (GHC.Fingerprint.Type.Fingerprint dt1 dt2)
+                                            (go1 ys) } }
+                                 } in
+                                 go1
+                                   (GHC.Types.[]
+                                      @ Data.Typeable.Internal.KindRep))) of dt1 { GHC.Fingerprint.Type.Fingerprint dt2 dt3 ->
+                      case GHC.Base.++
+                             @ Data.Typeable.Internal.TypeRep
+                             wild2
+                             PolyDistrMapReduce.__remoteTable16 of wild1 {
+                        []
+                        -> Data.Typeable.Internal.TypeRep
+                             __word 16275961958878852713
+                             __word 3578558998586661682
+                             (Data.Typeable.Internal.TyCon
+                                __word 16275961958878852713
+                                __word 3578558998586661682
+                                PolyDistrMapReduce.$smatch_ww2
+                                PolyDistrMapReduce.$stoDynamic_ww2
+                                PolyDistrMapReduce.$stoDynamic_ww1)
+                             (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                             (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                        : ipv2 ipv3
+                        -> case GHC.Fingerprint.fingerprintFingerprints
+                                  (GHC.Types.:
+                                     @ GHC.Fingerprint.Type.Fingerprint
+                                     (GHC.Fingerprint.Type.Fingerprint
+                                        __word 16275961958878852713
+                                        __word 3578558998586661682)
+                                     (let {
+                                        z9 :: [GHC.Fingerprint.Type.Fingerprint]
+                                        = Data.Typeable.Internal.listTc_$sgo ipv2 ipv3
+                                      } in
+                                      letrec {
+                                        go1 :: [Data.Typeable.Internal.TypeRep]
+                                               -> [GHC.Fingerprint.Type.Fingerprint]
+                                          {- Arity: 1, Strictness: <S,1*U> -}
+                                        = \ ds :: [Data.Typeable.Internal.TypeRep] ->
+                                          case ds of wild3 {
+                                            [] -> z9
+                                            : y ys
+                                            -> case y of wild4 { Data.Typeable.Internal.TypeRep dt4 dt5 ds1 ds2 ds3 ->
+                                               GHC.Types.:
+                                                 @ GHC.Fingerprint.Type.Fingerprint
+                                                 (GHC.Fingerprint.Type.Fingerprint dt4 dt5)
+                                                 (go1 ys) } }
+                                      } in
+                                      go1
+                                        (GHC.Types.[]
+                                           @ Data.Typeable.Internal.KindRep))) of dt4 { GHC.Fingerprint.Type.Fingerprint dt5 dt6 ->
+                           Data.Typeable.Internal.TypeRep
+                             dt5
+                             dt6
+                             (Data.Typeable.Internal.TyCon
+                                __word 16275961958878852713
+                                __word 3578558998586661682
+                                PolyDistrMapReduce.$smatch_ww2
+                                PolyDistrMapReduce.$stoDynamic_ww2
+                                PolyDistrMapReduce.$stoDynamic_ww1)
+                             (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                             wild1 } } } }) -}
+674d71372bd2f0b74b7f0e9cefeaac82
+  __remoteTable16 :: [Data.Typeable.Internal.TypeRep]
+  {- Unfolding: (GHC.Types.:
+                   @ Data.Typeable.Internal.TypeRep
+                   PolyDistrMapReduce.__remoteTable17
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)) -}
+97c0572e7de425cb2a956a87fb0087c2
+  __remoteTable17 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case GHC.Base.++
+                        @ Data.Typeable.Internal.TypeRep
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                        PolyDistrMapReduce.__remoteTable20 of wild2 {
+                   []
+                   -> case GHC.Base.++
+                             @ Data.Typeable.Internal.TypeRep
+                             (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                             PolyDistrMapReduce.__remoteTable18 of wild1 {
+                        []
+                        -> Data.Typeable.Internal.TypeRep
+                             __word 16275961958878852713
+                             __word 3578558998586661682
+                             (Data.Typeable.Internal.TyCon
+                                __word 16275961958878852713
+                                __word 3578558998586661682
+                                PolyDistrMapReduce.$smatch_ww2
+                                PolyDistrMapReduce.$stoDynamic_ww2
+                                PolyDistrMapReduce.$stoDynamic_ww1)
+                             (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                             (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                        : ipv ipv1
+                        -> case GHC.Fingerprint.fingerprintFingerprints
+                                  (GHC.Types.:
+                                     @ GHC.Fingerprint.Type.Fingerprint
+                                     (GHC.Fingerprint.Type.Fingerprint
+                                        __word 16275961958878852713
+                                        __word 3578558998586661682)
+                                     (let {
+                                        z9 :: [GHC.Fingerprint.Type.Fingerprint]
+                                        = Data.Typeable.Internal.listTc_$sgo ipv ipv1
+                                      } in
+                                      letrec {
+                                        go1 :: [Data.Typeable.Internal.TypeRep]
+                                               -> [GHC.Fingerprint.Type.Fingerprint]
+                                          {- Arity: 1, Strictness: <S,1*U> -}
+                                        = \ ds :: [Data.Typeable.Internal.TypeRep] ->
+                                          case ds of wild3 {
+                                            [] -> z9
+                                            : y ys
+                                            -> case y of wild4 { Data.Typeable.Internal.TypeRep dt1 dt2 ds1 ds2 ds3 ->
+                                               GHC.Types.:
+                                                 @ GHC.Fingerprint.Type.Fingerprint
+                                                 (GHC.Fingerprint.Type.Fingerprint dt1 dt2)
+                                                 (go1 ys) } }
+                                      } in
+                                      go1
+                                        (GHC.Types.[]
+                                           @ Data.Typeable.Internal.KindRep))) of dt1 { GHC.Fingerprint.Type.Fingerprint dt2 dt3 ->
+                           Data.Typeable.Internal.TypeRep
+                             dt2
+                             dt3
+                             (Data.Typeable.Internal.TyCon
+                                __word 16275961958878852713
+                                __word 3578558998586661682
+                                PolyDistrMapReduce.$smatch_ww2
+                                PolyDistrMapReduce.$stoDynamic_ww2
+                                PolyDistrMapReduce.$stoDynamic_ww1)
+                             (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                             wild1 } }
+                   : ipv ipv1
+                   -> case GHC.Fingerprint.fingerprintFingerprints
+                             (GHC.Types.:
+                                @ GHC.Fingerprint.Type.Fingerprint
+                                PolyDistrMapReduce.$stoDynamic8
+                                (let {
+                                   z9 :: [GHC.Fingerprint.Type.Fingerprint]
+                                   = Data.Typeable.Internal.listTc_$sgo ipv ipv1
+                                 } in
+                                 letrec {
+                                   go1 :: [Data.Typeable.Internal.TypeRep]
+                                          -> [GHC.Fingerprint.Type.Fingerprint]
+                                     {- Arity: 1, Strictness: <S,1*U> -}
+                                   = \ ds :: [Data.Typeable.Internal.TypeRep] ->
+                                     case ds of wild1 {
+                                       [] -> z9
+                                       : y ys
+                                       -> case y of wild4 { Data.Typeable.Internal.TypeRep dt1 dt2 ds1 ds2 ds3 ->
+                                          GHC.Types.:
+                                            @ GHC.Fingerprint.Type.Fingerprint
+                                            (GHC.Fingerprint.Type.Fingerprint dt1 dt2)
+                                            (go1 ys) } }
+                                 } in
+                                 go1
+                                   (GHC.Types.[]
+                                      @ Data.Typeable.Internal.KindRep))) of dt1 { GHC.Fingerprint.Type.Fingerprint dt2 dt3 ->
+                      case GHC.Base.++
+                             @ Data.Typeable.Internal.TypeRep
+                             wild2
+                             PolyDistrMapReduce.__remoteTable18 of wild1 {
+                        []
+                        -> Data.Typeable.Internal.TypeRep
+                             __word 16275961958878852713
+                             __word 3578558998586661682
+                             (Data.Typeable.Internal.TyCon
+                                __word 16275961958878852713
+                                __word 3578558998586661682
+                                PolyDistrMapReduce.$smatch_ww2
+                                PolyDistrMapReduce.$stoDynamic_ww2
+                                PolyDistrMapReduce.$stoDynamic_ww1)
+                             (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                             (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                        : ipv2 ipv3
+                        -> case GHC.Fingerprint.fingerprintFingerprints
+                                  (GHC.Types.:
+                                     @ GHC.Fingerprint.Type.Fingerprint
+                                     (GHC.Fingerprint.Type.Fingerprint
+                                        __word 16275961958878852713
+                                        __word 3578558998586661682)
+                                     (let {
+                                        z9 :: [GHC.Fingerprint.Type.Fingerprint]
+                                        = Data.Typeable.Internal.listTc_$sgo ipv2 ipv3
+                                      } in
+                                      letrec {
+                                        go1 :: [Data.Typeable.Internal.TypeRep]
+                                               -> [GHC.Fingerprint.Type.Fingerprint]
+                                          {- Arity: 1, Strictness: <S,1*U> -}
+                                        = \ ds :: [Data.Typeable.Internal.TypeRep] ->
+                                          case ds of wild3 {
+                                            [] -> z9
+                                            : y ys
+                                            -> case y of wild4 { Data.Typeable.Internal.TypeRep dt4 dt5 ds1 ds2 ds3 ->
+                                               GHC.Types.:
+                                                 @ GHC.Fingerprint.Type.Fingerprint
+                                                 (GHC.Fingerprint.Type.Fingerprint dt4 dt5)
+                                                 (go1 ys) } }
+                                      } in
+                                      go1
+                                        (GHC.Types.[]
+                                           @ Data.Typeable.Internal.KindRep))) of dt4 { GHC.Fingerprint.Type.Fingerprint dt5 dt6 ->
+                           Data.Typeable.Internal.TypeRep
+                             dt5
+                             dt6
+                             (Data.Typeable.Internal.TyCon
+                                __word 16275961958878852713
+                                __word 3578558998586661682
+                                PolyDistrMapReduce.$smatch_ww2
+                                PolyDistrMapReduce.$stoDynamic_ww2
+                                PolyDistrMapReduce.$stoDynamic_ww1)
+                             (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                             wild1 } } } }) -}
+2dcf7a302d8073fd94ed06c2753c5095
+  __remoteTable18 :: [Data.Typeable.Internal.TypeRep]
+  {- Unfolding: (GHC.Types.:
+                   @ Data.Typeable.Internal.TypeRep
+                   PolyDistrMapReduce.__remoteTable19
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)) -}
+238fb9e946f32cf52da3368c3b1685b7
+  __remoteTable19 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case GHC.Base.++
+                        @ Data.Typeable.Internal.TypeRep
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                        PolyDistrMapReduce.$stoDynamic18 of wild2 {
+                   []
+                   -> Data.Typeable.Internal.TypeRep
+                        __word 11348492752159865867
+                        __word 15112955730117169623
+                        PolyDistrMapReduce.$stoDynamic16
+                        (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   : ipv ipv1
+                   -> case GHC.Fingerprint.fingerprintFingerprints
+                             (GHC.Types.:
+                                @ GHC.Fingerprint.Type.Fingerprint
+                                PolyDistrMapReduce.$stoDynamic15
+                                (let {
+                                   z9 :: [GHC.Fingerprint.Type.Fingerprint]
+                                   = Data.Typeable.Internal.listTc_$sgo ipv ipv1
+                                 } in
+                                 letrec {
+                                   go1 :: [Data.Typeable.Internal.TypeRep]
+                                          -> [GHC.Fingerprint.Type.Fingerprint]
+                                     {- Arity: 1, Strictness: <S,1*U> -}
+                                   = \ ds :: [Data.Typeable.Internal.TypeRep] ->
+                                     case ds of wild1 {
+                                       [] -> z9
+                                       : y ys
+                                       -> case y of wild4 { Data.Typeable.Internal.TypeRep dt1 dt2 ds1 ds2 ds3 ->
+                                          GHC.Types.:
+                                            @ GHC.Fingerprint.Type.Fingerprint
+                                            (GHC.Fingerprint.Type.Fingerprint dt1 dt2)
+                                            (go1 ys) } }
+                                 } in
+                                 go1
+                                   (GHC.Types.[]
+                                      @ Data.Typeable.Internal.KindRep))) of dt1 { GHC.Fingerprint.Type.Fingerprint dt2 dt3 ->
+                      Data.Typeable.Internal.TypeRep
+                        dt2
+                        dt3
+                        PolyDistrMapReduce.$stoDynamic16
+                        (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                        wild2 } }) -}
+42c6c404d9132ac019aa4a7fcf5f949f
+  __remoteTable2 :: Data.Rank1Dynamic.Dynamic
+  {- Strictness: m,
+     Unfolding: (Data.Rank1Dynamic.Dynamic
+                   PolyDistrMapReduce.__remoteTable3
+                   PolyDistrMapReduce.sdictProcessIdPair
+                     `cast`
+                   (UnivCo mkUnsafeCo representational (Control.Distributed.Process.Serializable.SerializableDict
+                                                          (Control.Distributed.Process.Internal.Types.ProcessId,
+                                                           Control.Distributed.Process.Internal.Types.ProcessId)) GHC.Prim.Any)) -}
+e700ff544034cc1f660e566d922ed025
+  __remoteTable20 :: [Data.Typeable.Internal.TypeRep]
+  {- Unfolding: (GHC.Types.:
+                   @ Data.Typeable.Internal.TypeRep
+                   PolyDistrMapReduce.__remoteTable21
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)) -}
+5c95a49799046e79b64628fd8476f9ae
+  __remoteTable21 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case GHC.Base.++
+                        @ Data.Typeable.Internal.TypeRep
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                        PolyDistrMapReduce.$stoDynamic54 of wild2 {
+                   []
+                   -> case PolyDistrMapReduce.$w$j1
+                             __word 1091321823365361407
+                             __word 18149233857709920763
+                             PolyDistrMapReduce.$stoDynamic_ww8
+                             PolyDistrMapReduce.$stoDynamic_ww7
+                             PolyDistrMapReduce.$stoDynamic_ww7
+                             (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                             (GHC.Types.[]
+                                @ Data.Typeable.Internal.TypeRep) of ww { (#,,,,#) ww1 ww5 ww6 ww7 ww8 ->
+                      Data.Typeable.Internal.TypeRep ww1 ww5 ww6 ww7 ww8 }
+                   : ipv ipv1
+                   -> case GHC.Fingerprint.fingerprintFingerprints
+                             (GHC.Types.:
+                                @ GHC.Fingerprint.Type.Fingerprint
+                                PolyDistrMapReduce.$stoDynamic21
+                                (let {
+                                   z9 :: [GHC.Fingerprint.Type.Fingerprint]
+                                   = Data.Typeable.Internal.listTc_$sgo ipv ipv1
+                                 } in
+                                 letrec {
+                                   go1 :: [Data.Typeable.Internal.TypeRep]
+                                          -> [GHC.Fingerprint.Type.Fingerprint]
+                                     {- Arity: 1, Strictness: <S,1*U> -}
+                                   = \ ds :: [Data.Typeable.Internal.TypeRep] ->
+                                     case ds of wild1 {
+                                       [] -> z9
+                                       : y ys
+                                       -> case y of wild4 { Data.Typeable.Internal.TypeRep dt1 dt2 ds1 ds2 ds3 ->
+                                          GHC.Types.:
+                                            @ GHC.Fingerprint.Type.Fingerprint
+                                            (GHC.Fingerprint.Type.Fingerprint dt1 dt2)
+                                            (go1 ys) } }
+                                 } in
+                                 go1
+                                   (GHC.Types.[]
+                                      @ Data.Typeable.Internal.KindRep))) of dt1 { GHC.Fingerprint.Type.Fingerprint dt2 dt3 ->
+                      case PolyDistrMapReduce.$w$j1
+                             __word 1091321823365361407
+                             __word 18149233857709920763
+                             PolyDistrMapReduce.$stoDynamic_ww8
+                             PolyDistrMapReduce.$stoDynamic_ww7
+                             PolyDistrMapReduce.$stoDynamic_ww7
+                             (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                             wild2 of ww { (#,,,,#) ww1 ww5 ww6 ww7 ww8 ->
+                      Data.Typeable.Internal.TypeRep ww1 ww5 ww6 ww7 ww8 } } }) -}
+2ec1f0d5cdb7b564684181da34c7ad6d
+  __remoteTable22 :: [Data.Typeable.Internal.TypeRep]
+  {- Unfolding: (GHC.Types.:
+                   @ Data.Typeable.Internal.TypeRep
+                   PolyDistrMapReduce.__remoteTable23
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)) -}
+44fc1a25b1cbe91e4648cba960b59a6a
+  __remoteTable23 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case GHC.Base.++
+                        @ Data.Typeable.Internal.TypeRep
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                        PolyDistrMapReduce.__remoteTable24 of wild2 {
+                   []
+                   -> Data.Typeable.Internal.TypeRep
+                        __word 18238882603930935023
+                        __word 1941364615484687110
+                        PolyDistrMapReduce.$stoDynamic_wild1
+                        (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   : ipv ipv1
+                   -> case GHC.Fingerprint.fingerprintFingerprints
+                             (GHC.Types.:
+                                @ GHC.Fingerprint.Type.Fingerprint
+                                PolyDistrMapReduce.$stoDynamic24
+                                (let {
+                                   z9 :: [GHC.Fingerprint.Type.Fingerprint]
+                                   = Data.Typeable.Internal.listTc_$sgo ipv ipv1
+                                 } in
+                                 letrec {
+                                   go1 :: [Data.Typeable.Internal.TypeRep]
+                                          -> [GHC.Fingerprint.Type.Fingerprint]
+                                     {- Arity: 1, Strictness: <S,1*U> -}
+                                   = \ ds :: [Data.Typeable.Internal.TypeRep] ->
+                                     case ds of wild1 {
+                                       [] -> z9
+                                       : y ys
+                                       -> case y of wild4 { Data.Typeable.Internal.TypeRep dt1 dt2 ds1 ds2 ds3 ->
+                                          GHC.Types.:
+                                            @ GHC.Fingerprint.Type.Fingerprint
+                                            (GHC.Fingerprint.Type.Fingerprint dt1 dt2)
+                                            (go1 ys) } }
+                                 } in
+                                 go1
+                                   (GHC.Types.[]
+                                      @ Data.Typeable.Internal.KindRep))) of dt1 { GHC.Fingerprint.Type.Fingerprint dt2 dt3 ->
+                      Data.Typeable.Internal.TypeRep
+                        dt2
+                        dt3
+                        PolyDistrMapReduce.$stoDynamic_wild1
+                        (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                        wild2 } }) -}
+fd6fab5266be03ef9755a5caa6294519
+  __remoteTable24 :: [Data.Typeable.Internal.TypeRep]
+  {- Unfolding: (GHC.Types.:
+                   @ Data.Typeable.Internal.TypeRep
+                   PolyDistrMapReduce.__remoteTable25
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)) -}
+82942bb6fca369d08fa43c9f7663148e
+  __remoteTable25 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case PolyDistrMapReduce.$stoDynamic_w1 of wild2 {
+                   []
+                   -> Data.Typeable.Internal.TypeRep
+                        __word 1421928894227420842
+                        __word 3564869376365145663
+                        PolyDistrMapReduce.$stoDynamic_wild2
+                        (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   : ipv ipv1
+                   -> case GHC.Fingerprint.fingerprintFingerprints
+                             (GHC.Types.:
+                                @ GHC.Fingerprint.Type.Fingerprint
+                                PolyDistrMapReduce.$stoDynamic27
+                                (let {
+                                   z9 :: [GHC.Fingerprint.Type.Fingerprint]
+                                   = Data.Typeable.Internal.listTc_$sgo ipv ipv1
+                                 } in
+                                 letrec {
+                                   go1 :: [Data.Typeable.Internal.TypeRep]
+                                          -> [GHC.Fingerprint.Type.Fingerprint]
+                                     {- Arity: 1, Strictness: <S,1*U> -}
+                                   = \ ds :: [Data.Typeable.Internal.TypeRep] ->
+                                     case ds of wild1 {
+                                       [] -> z9
+                                       : y ys
+                                       -> case y of wild4 { Data.Typeable.Internal.TypeRep dt1 dt2 ds1 ds2 ds3 ->
+                                          GHC.Types.:
+                                            @ GHC.Fingerprint.Type.Fingerprint
+                                            (GHC.Fingerprint.Type.Fingerprint dt1 dt2)
+                                            (go1 ys) } }
+                                 } in
+                                 go1
+                                   (GHC.Types.[]
+                                      @ Data.Typeable.Internal.KindRep))) of dt1 { GHC.Fingerprint.Type.Fingerprint dt2 dt3 ->
+                      Data.Typeable.Internal.TypeRep
+                        dt2
+                        dt3
+                        PolyDistrMapReduce.$stoDynamic_wild2
+                        (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                        wild2 } }) -}
+320bfcf6e0180d0ec4366c937f4856b7
+  __remoteTable26 :: [Data.Typeable.Internal.TypeRep]
+  {- Unfolding: (GHC.Types.:
+                   @ Data.Typeable.Internal.TypeRep
+                   PolyDistrMapReduce.__remoteTable27
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)) -}
+47fb8713f1b6ddbfe923068771889154
+  __remoteTable27 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case GHC.Base.++
+                        @ Data.Typeable.Internal.TypeRep
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                        PolyDistrMapReduce.__remoteTable28 of wild2 {
+                   []
+                   -> Data.Typeable.Internal.TypeRep
+                        __word 178358391531745606
+                        __word 14321957899964785745
+                        PolyDistrMapReduce.$stoDynamic_wild
+                        (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   : ipv ipv1
+                   -> case GHC.Fingerprint.fingerprintFingerprints
+                             (GHC.Types.:
+                                @ GHC.Fingerprint.Type.Fingerprint
+                                PolyDistrMapReduce.$stoDynamic2
+                                (let {
+                                   z9 :: [GHC.Fingerprint.Type.Fingerprint]
+                                   = Data.Typeable.Internal.listTc_$sgo ipv ipv1
+                                 } in
+                                 letrec {
+                                   go1 :: [Data.Typeable.Internal.TypeRep]
+                                          -> [GHC.Fingerprint.Type.Fingerprint]
+                                     {- Arity: 1, Strictness: <S,1*U> -}
+                                   = \ ds :: [Data.Typeable.Internal.TypeRep] ->
+                                     case ds of wild1 {
+                                       [] -> z9
+                                       : y ys
+                                       -> case y of wild4 { Data.Typeable.Internal.TypeRep dt1 dt2 ds1 ds2 ds3 ->
+                                          GHC.Types.:
+                                            @ GHC.Fingerprint.Type.Fingerprint
+                                            (GHC.Fingerprint.Type.Fingerprint dt1 dt2)
+                                            (go1 ys) } }
+                                 } in
+                                 go1
+                                   (GHC.Types.[]
+                                      @ Data.Typeable.Internal.KindRep))) of dt1 { GHC.Fingerprint.Type.Fingerprint dt2 dt3 ->
+                      Data.Typeable.Internal.TypeRep
+                        dt2
+                        dt3
+                        PolyDistrMapReduce.$stoDynamic_wild
+                        (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                        wild2 } }) -}
+e67bfa68883b3a7be36dd6488f13676b
+  __remoteTable28 :: [Data.Typeable.Internal.TypeRep]
+  {- Unfolding: (GHC.Types.:
+                   @ Data.Typeable.Internal.TypeRep
+                   PolyDistrMapReduce.__remoteTable29
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)) -}
+5e9730cec721c5a3338ff8009ea50acf
+  __remoteTable29 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case GHC.Base.++
+                        @ Data.Typeable.Internal.TypeRep
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                        PolyDistrMapReduce.__remoteTable30 of wild2 {
+                   []
+                   -> Data.Typeable.Internal.TypeRep
+                        __word 17730107610217102821
+                        __word 9866972337190828755
+                        PolyDistrMapReduce.$stoDynamic70
+                        (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   : ipv ipv1
+                   -> case GHC.Fingerprint.fingerprintFingerprints
+                             (GHC.Types.:
+                                @ GHC.Fingerprint.Type.Fingerprint
+                                PolyDistrMapReduce.$stoDynamic69
+                                (let {
+                                   z9 :: [GHC.Fingerprint.Type.Fingerprint]
+                                   = Data.Typeable.Internal.listTc_$sgo ipv ipv1
+                                 } in
+                                 letrec {
+                                   go1 :: [Data.Typeable.Internal.TypeRep]
+                                          -> [GHC.Fingerprint.Type.Fingerprint]
+                                     {- Arity: 1, Strictness: <S,1*U> -}
+                                   = \ ds :: [Data.Typeable.Internal.TypeRep] ->
+                                     case ds of wild1 {
+                                       [] -> z9
+                                       : y ys
+                                       -> case y of wild4 { Data.Typeable.Internal.TypeRep dt1 dt2 ds1 ds2 ds3 ->
+                                          GHC.Types.:
+                                            @ GHC.Fingerprint.Type.Fingerprint
+                                            (GHC.Fingerprint.Type.Fingerprint dt1 dt2)
+                                            (go1 ys) } }
+                                 } in
+                                 go1
+                                   (GHC.Types.[]
+                                      @ Data.Typeable.Internal.KindRep))) of dt1 { GHC.Fingerprint.Type.Fingerprint dt2 dt3 ->
+                      Data.Typeable.Internal.TypeRep
+                        dt2
+                        dt3
+                        PolyDistrMapReduce.$stoDynamic70
+                        (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                        wild2 } }) -}
+c8be13517f92c99e3f62ced7744b8b4e
+  __remoteTable3 :: Data.Rank1Typeable.TypeRep
+  {- Unfolding: (case PolyDistrMapReduce.$stoDynamic_w5 of wild2 {
+                   []
+                   -> (Data.Typeable.Internal.TypeRep
+                         __word 178358391531745606
+                         __word 14321957899964785745
+                         PolyDistrMapReduce.$stoDynamic_wild
+                         (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                         (GHC.Types.[] @ Data.Typeable.Internal.TypeRep))
+                        `cast`
+                      (Sym (Data.Rank1Typeable.NTCo:TypeRep[0]))
+                   : ipv ipv1
+                   -> case GHC.Fingerprint.fingerprintFingerprints
+                             PolyDistrMapReduce.__remoteTable4 of dt1 { GHC.Fingerprint.Type.Fingerprint dt2 dt3 ->
+                      (Data.Typeable.Internal.TypeRep
+                         dt2
+                         dt3
+                         PolyDistrMapReduce.$stoDynamic_wild
+                         (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                         wild2)
+                        `cast`
+                      (Sym (Data.Rank1Typeable.NTCo:TypeRep[0])) } }) -}
+0ddfd6bc5c24fbfc9ebc2c55477f369e
+  __remoteTable30 :: [Data.Typeable.Internal.TypeRep]
+  {- Unfolding: (GHC.Types.:
+                   @ Data.Typeable.Internal.TypeRep
+                   PolyDistrMapReduce.__remoteTable31
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)) -}
+d4a38110c95017dc799612c9aa2ce047
+  __remoteTable31 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case GHC.Base.++
+                        @ Data.Typeable.Internal.TypeRep
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                        PolyDistrMapReduce.$stoDynamic46 of wild2 {
+                   []
+                   -> case GHC.Base.++
+                             @ Data.Typeable.Internal.TypeRep
+                             (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                             PolyDistrMapReduce.$stoDynamic42 of wild1 {
+                        []
+                        -> Data.Typeable.Internal.TypeRep
+                             __word 17502837480397947244
+                             __word 15872498598114190556
+                             PolyDistrMapReduce.$stoDynamic_wild5
+                             (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                             (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                        : ipv ipv1
+                        -> case GHC.Fingerprint.fingerprintFingerprints
+                                  (GHC.Types.:
+                                     @ GHC.Fingerprint.Type.Fingerprint
+                                     PolyDistrMapReduce.$stoDynamic64
+                                     (let {
+                                        z9 :: [GHC.Fingerprint.Type.Fingerprint]
+                                        = Data.Typeable.Internal.listTc_$sgo ipv ipv1
+                                      } in
+                                      letrec {
+                                        go1 :: [Data.Typeable.Internal.TypeRep]
+                                               -> [GHC.Fingerprint.Type.Fingerprint]
+                                          {- Arity: 1, Strictness: <S,1*U> -}
+                                        = \ ds :: [Data.Typeable.Internal.TypeRep] ->
+                                          case ds of wild3 {
+                                            [] -> z9
+                                            : y ys
+                                            -> case y of wild4 { Data.Typeable.Internal.TypeRep dt1 dt2 ds1 ds2 ds3 ->
+                                               GHC.Types.:
+                                                 @ GHC.Fingerprint.Type.Fingerprint
+                                                 (GHC.Fingerprint.Type.Fingerprint dt1 dt2)
+                                                 (go1 ys) } }
+                                      } in
+                                      go1
+                                        (GHC.Types.[]
+                                           @ Data.Typeable.Internal.KindRep))) of dt1 { GHC.Fingerprint.Type.Fingerprint dt2 dt3 ->
+                           Data.Typeable.Internal.TypeRep
+                             dt2
+                             dt3
+                             PolyDistrMapReduce.$stoDynamic_wild5
+                             (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                             wild1 } }
+                   : ipv ipv1
+                   -> case GHC.Fingerprint.fingerprintFingerprints
+                             (GHC.Types.:
+                                @ GHC.Fingerprint.Type.Fingerprint
+                                PolyDistrMapReduce.$stoDynamic64
+                                (let {
+                                   z9 :: [GHC.Fingerprint.Type.Fingerprint]
+                                   = Data.Typeable.Internal.listTc_$sgo ipv ipv1
+                                 } in
+                                 letrec {
+                                   go1 :: [Data.Typeable.Internal.TypeRep]
+                                          -> [GHC.Fingerprint.Type.Fingerprint]
+                                     {- Arity: 1, Strictness: <S,1*U> -}
+                                   = \ ds :: [Data.Typeable.Internal.TypeRep] ->
+                                     case ds of wild1 {
+                                       [] -> z9
+                                       : y ys
+                                       -> case y of wild4 { Data.Typeable.Internal.TypeRep dt1 dt2 ds1 ds2 ds3 ->
+                                          GHC.Types.:
+                                            @ GHC.Fingerprint.Type.Fingerprint
+                                            (GHC.Fingerprint.Type.Fingerprint dt1 dt2)
+                                            (go1 ys) } }
+                                 } in
+                                 go1
+                                   (GHC.Types.[]
+                                      @ Data.Typeable.Internal.KindRep))) of dt1 { GHC.Fingerprint.Type.Fingerprint dt2 dt3 ->
+                      case GHC.Base.++
+                             @ Data.Typeable.Internal.TypeRep
+                             wild2
+                             PolyDistrMapReduce.$stoDynamic42 of wild1 {
+                        []
+                        -> Data.Typeable.Internal.TypeRep
+                             __word 17502837480397947244
+                             __word 15872498598114190556
+                             PolyDistrMapReduce.$stoDynamic_wild5
+                             (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                             (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                        : ipv2 ipv3
+                        -> case GHC.Fingerprint.fingerprintFingerprints
+                                  (GHC.Types.:
+                                     @ GHC.Fingerprint.Type.Fingerprint
+                                     PolyDistrMapReduce.$stoDynamic64
+                                     (let {
+                                        z9 :: [GHC.Fingerprint.Type.Fingerprint]
+                                        = Data.Typeable.Internal.listTc_$sgo ipv2 ipv3
+                                      } in
+                                      letrec {
+                                        go1 :: [Data.Typeable.Internal.TypeRep]
+                                               -> [GHC.Fingerprint.Type.Fingerprint]
+                                          {- Arity: 1, Strictness: <S,1*U> -}
+                                        = \ ds :: [Data.Typeable.Internal.TypeRep] ->
+                                          case ds of wild3 {
+                                            [] -> z9
+                                            : y ys
+                                            -> case y of wild4 { Data.Typeable.Internal.TypeRep dt4 dt5 ds1 ds2 ds3 ->
+                                               GHC.Types.:
+                                                 @ GHC.Fingerprint.Type.Fingerprint
+                                                 (GHC.Fingerprint.Type.Fingerprint dt4 dt5)
+                                                 (go1 ys) } }
+                                      } in
+                                      go1
+                                        (GHC.Types.[]
+                                           @ Data.Typeable.Internal.KindRep))) of dt4 { GHC.Fingerprint.Type.Fingerprint dt5 dt6 ->
+                           Data.Typeable.Internal.TypeRep
+                             dt5
+                             dt6
+                             PolyDistrMapReduce.$stoDynamic_wild5
+                             (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                             wild1 } } } }) -}
+b3a829645bdac4b98ef5baae233a8e69
+  __remoteTable32 :: [Data.Typeable.Internal.TypeRep]
+  {- Unfolding: (GHC.Types.:
+                   @ Data.Typeable.Internal.TypeRep
+                   PolyDistrMapReduce.__remoteTable33
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)) -}
+90c3fd4168be012580a55d80f8e660bd
+  __remoteTable33 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case GHC.Base.++
+                        @ Data.Typeable.Internal.TypeRep
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                        PolyDistrMapReduce.__remoteTable34 of wild2 {
+                   []
+                   -> Data.Typeable.Internal.TypeRep
+                        __word 178358391531745606
+                        __word 14321957899964785745
+                        PolyDistrMapReduce.$stoDynamic_wild
+                        (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   : ipv ipv1
+                   -> case GHC.Fingerprint.fingerprintFingerprints
+                             (GHC.Types.:
+                                @ GHC.Fingerprint.Type.Fingerprint
+                                PolyDistrMapReduce.$stoDynamic2
+                                (let {
+                                   z9 :: [GHC.Fingerprint.Type.Fingerprint]
+                                   = Data.Typeable.Internal.listTc_$sgo ipv ipv1
+                                 } in
+                                 letrec {
+                                   go1 :: [Data.Typeable.Internal.TypeRep]
+                                          -> [GHC.Fingerprint.Type.Fingerprint]
+                                     {- Arity: 1, Strictness: <S,1*U> -}
+                                   = \ ds :: [Data.Typeable.Internal.TypeRep] ->
+                                     case ds of wild1 {
+                                       [] -> z9
+                                       : y ys
+                                       -> case y of wild4 { Data.Typeable.Internal.TypeRep dt1 dt2 ds1 ds2 ds3 ->
+                                          GHC.Types.:
+                                            @ GHC.Fingerprint.Type.Fingerprint
+                                            (GHC.Fingerprint.Type.Fingerprint dt1 dt2)
+                                            (go1 ys) } }
+                                 } in
+                                 go1
+                                   (GHC.Types.[]
+                                      @ Data.Typeable.Internal.KindRep))) of dt1 { GHC.Fingerprint.Type.Fingerprint dt2 dt3 ->
+                      Data.Typeable.Internal.TypeRep
+                        dt2
+                        dt3
+                        PolyDistrMapReduce.$stoDynamic_wild
+                        (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                        wild2 } }) -}
+d40eaf0833889299fcf1064985080fc0
+  __remoteTable34 :: [Data.Typeable.Internal.TypeRep]
+  {- Unfolding: (GHC.Types.:
+                   @ Data.Typeable.Internal.TypeRep
+                   PolyDistrMapReduce.__remoteTable35
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)) -}
+d4fe7d8536fd043a0f1a34fe53b2d2d5
+  __remoteTable35 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case GHC.Base.++
+                        @ Data.Typeable.Internal.TypeRep
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                        PolyDistrMapReduce.$stoDynamic54 of wild2 {
+                   []
+                   -> case GHC.Base.++
+                             @ Data.Typeable.Internal.TypeRep
+                             (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                             PolyDistrMapReduce.$stoDynamic50 of wild1 {
+                        []
+                        -> Data.Typeable.Internal.TypeRep
+                             __word 17502837480397947244
+                             __word 15872498598114190556
+                             PolyDistrMapReduce.$stoDynamic_wild5
+                             (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                             (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                        : ipv ipv1
+                        -> case GHC.Fingerprint.fingerprintFingerprints
+                                  (GHC.Types.:
+                                     @ GHC.Fingerprint.Type.Fingerprint
+                                     PolyDistrMapReduce.$stoDynamic64
+                                     (let {
+                                        z9 :: [GHC.Fingerprint.Type.Fingerprint]
+                                        = Data.Typeable.Internal.listTc_$sgo ipv ipv1
+                                      } in
+                                      letrec {
+                                        go1 :: [Data.Typeable.Internal.TypeRep]
+                                               -> [GHC.Fingerprint.Type.Fingerprint]
+                                          {- Arity: 1, Strictness: <S,1*U> -}
+                                        = \ ds :: [Data.Typeable.Internal.TypeRep] ->
+                                          case ds of wild3 {
+                                            [] -> z9
+                                            : y ys
+                                            -> case y of wild4 { Data.Typeable.Internal.TypeRep dt1 dt2 ds1 ds2 ds3 ->
+                                               GHC.Types.:
+                                                 @ GHC.Fingerprint.Type.Fingerprint
+                                                 (GHC.Fingerprint.Type.Fingerprint dt1 dt2)
+                                                 (go1 ys) } }
+                                      } in
+                                      go1
+                                        (GHC.Types.[]
+                                           @ Data.Typeable.Internal.KindRep))) of dt1 { GHC.Fingerprint.Type.Fingerprint dt2 dt3 ->
+                           Data.Typeable.Internal.TypeRep
+                             dt2
+                             dt3
+                             PolyDistrMapReduce.$stoDynamic_wild5
+                             (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                             wild1 } }
+                   : ipv ipv1
+                   -> case GHC.Fingerprint.fingerprintFingerprints
+                             (GHC.Types.:
+                                @ GHC.Fingerprint.Type.Fingerprint
+                                PolyDistrMapReduce.$stoDynamic64
+                                (let {
+                                   z9 :: [GHC.Fingerprint.Type.Fingerprint]
+                                   = Data.Typeable.Internal.listTc_$sgo ipv ipv1
+                                 } in
+                                 letrec {
+                                   go1 :: [Data.Typeable.Internal.TypeRep]
+                                          -> [GHC.Fingerprint.Type.Fingerprint]
+                                     {- Arity: 1, Strictness: <S,1*U> -}
+                                   = \ ds :: [Data.Typeable.Internal.TypeRep] ->
+                                     case ds of wild1 {
+                                       [] -> z9
+                                       : y ys
+                                       -> case y of wild4 { Data.Typeable.Internal.TypeRep dt1 dt2 ds1 ds2 ds3 ->
+                                          GHC.Types.:
+                                            @ GHC.Fingerprint.Type.Fingerprint
+                                            (GHC.Fingerprint.Type.Fingerprint dt1 dt2)
+                                            (go1 ys) } }
+                                 } in
+                                 go1
+                                   (GHC.Types.[]
+                                      @ Data.Typeable.Internal.KindRep))) of dt1 { GHC.Fingerprint.Type.Fingerprint dt2 dt3 ->
+                      case GHC.Base.++
+                             @ Data.Typeable.Internal.TypeRep
+                             wild2
+                             PolyDistrMapReduce.$stoDynamic50 of wild1 {
+                        []
+                        -> Data.Typeable.Internal.TypeRep
+                             __word 17502837480397947244
+                             __word 15872498598114190556
+                             PolyDistrMapReduce.$stoDynamic_wild5
+                             (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                             (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                        : ipv2 ipv3
+                        -> case GHC.Fingerprint.fingerprintFingerprints
+                                  (GHC.Types.:
+                                     @ GHC.Fingerprint.Type.Fingerprint
+                                     PolyDistrMapReduce.$stoDynamic64
+                                     (let {
+                                        z9 :: [GHC.Fingerprint.Type.Fingerprint]
+                                        = Data.Typeable.Internal.listTc_$sgo ipv2 ipv3
+                                      } in
+                                      letrec {
+                                        go1 :: [Data.Typeable.Internal.TypeRep]
+                                               -> [GHC.Fingerprint.Type.Fingerprint]
+                                          {- Arity: 1, Strictness: <S,1*U> -}
+                                        = \ ds :: [Data.Typeable.Internal.TypeRep] ->
+                                          case ds of wild3 {
+                                            [] -> z9
+                                            : y ys
+                                            -> case y of wild4 { Data.Typeable.Internal.TypeRep dt4 dt5 ds1 ds2 ds3 ->
+                                               GHC.Types.:
+                                                 @ GHC.Fingerprint.Type.Fingerprint
+                                                 (GHC.Fingerprint.Type.Fingerprint dt4 dt5)
+                                                 (go1 ys) } }
+                                      } in
+                                      go1
+                                        (GHC.Types.[]
+                                           @ Data.Typeable.Internal.KindRep))) of dt4 { GHC.Fingerprint.Type.Fingerprint dt5 dt6 ->
+                           Data.Typeable.Internal.TypeRep
+                             dt5
+                             dt6
+                             PolyDistrMapReduce.$stoDynamic_wild5
+                             (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                             wild1 } } } }) -}
+f11ed584ad574ebba32a0b613222c9f5
+  __remoteTable4 :: [GHC.Fingerprint.Type.Fingerprint]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Fingerprint.Type.Fingerprint
+                   PolyDistrMapReduce.$stoDynamic2
+                   PolyDistrMapReduce.__remoteTable5) -}
+7ec0b20f1487fc6b8cdee5cb74404f7b
+  __remoteTable5 :: [GHC.Fingerprint.Type.Fingerprint]
+  {- Unfolding: (PolyDistrMapReduce.__remoteTable_go
+                   (GHC.Types.[] @ Data.Typeable.Internal.KindRep)) -}
+f8c342a2f8e9269cdbec3f8ff2a74679
+  __remoteTable6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "PolyDistrMapReduce.sdictProcessIdPair"#) -}
+a6d3773788e09f63e138a9d2e0308fa7
+  __remoteTable7 :: Data.Rank1Dynamic.Dynamic
+  {- Strictness: m,
+     Unfolding: (Data.Rank1Dynamic.Dynamic
+                   PolyDistrMapReduce.__remoteTable9
+                   (PolyDistrMapReduce.__remoteTable8
+                      @ (Data.Rank1Typeable.TypVar Data.Rank1Typeable.Zero)
+                      @ (Data.Rank1Typeable.TypVar
+                           (Data.Rank1Typeable.Succ Data.Rank1Typeable.Zero))
+                      @ (Data.Rank1Typeable.TypVar
+                           (Data.Rank1Typeable.Succ
+                              (Data.Rank1Typeable.Succ Data.Rank1Typeable.Zero)))
+                      @ (Data.Rank1Typeable.TypVar
+                           (Data.Rank1Typeable.Succ
+                              (Data.Rank1Typeable.Succ
+                                 (Data.Rank1Typeable.Succ Data.Rank1Typeable.Zero))))
+                      @ (Data.Rank1Typeable.TypVar
+                           (Data.Rank1Typeable.Succ
+                              (Data.Rank1Typeable.Succ
+                                 (Data.Rank1Typeable.Succ
+                                    (Data.Rank1Typeable.Succ Data.Rank1Typeable.Zero))))))
+                     `cast`
+                   (Trans
+                        (<Control.Distributed.Process.Serializable.SerializableDict
+                            (Data.Rank1Typeable.TypVar Data.Rank1Typeable.Zero,
+                             Data.Rank1Typeable.TypVar
+                               (Data.Rank1Typeable.Succ Data.Rank1Typeable.Zero))>_R
+                         ->_R <Control.Distributed.Process.Serializable.SerializableDict
+                                 [(Data.Rank1Typeable.TypVar
+                                     (Data.Rank1Typeable.Succ
+                                        (Data.Rank1Typeable.Succ Data.Rank1Typeable.Zero)),
+                                   Data.Rank1Typeable.TypVar
+                                     (Data.Rank1Typeable.Succ
+                                        (Data.Rank1Typeable.Succ
+                                           (Data.Rank1Typeable.Succ Data.Rank1Typeable.Zero))))]>_R
+                         ->_R <(Control.Distributed.Process.Internal.Types.ProcessId,
+                                Control.Distributed.Process.Internal.Types.ProcessId)>_R
+                         ->_R <MapReduce.MapReduce
+                                 (Data.Rank1Typeable.TypVar Data.Rank1Typeable.Zero)
+                                 (Data.Rank1Typeable.TypVar
+                                    (Data.Rank1Typeable.Succ Data.Rank1Typeable.Zero))
+                                 (Data.Rank1Typeable.TypVar
+                                    (Data.Rank1Typeable.Succ
+                                       (Data.Rank1Typeable.Succ Data.Rank1Typeable.Zero)))
+                                 (Data.Rank1Typeable.TypVar
+                                    (Data.Rank1Typeable.Succ
+                                       (Data.Rank1Typeable.Succ
+                                          (Data.Rank1Typeable.Succ Data.Rank1Typeable.Zero))))
+                                 (Data.Rank1Typeable.TypVar
+                                    (Data.Rank1Typeable.Succ
+                                       (Data.Rank1Typeable.Succ
+                                          (Data.Rank1Typeable.Succ
+                                             (Data.Rank1Typeable.Succ
+                                                Data.Rank1Typeable.Zero)))))>_R
+                         ->_R Trans
+                                  (<Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                                   ->_R Sym (GHC.Types.NTCo:IO[0] <()>_R))
+                                  (Trans
+                                       (Sym (Control.Monad.Trans.Reader.NTCo:ReaderT[0]
+                                                 <Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                                                 <GHC.Types.IO>_R
+                                                 <()>_N))
+                                       (Sym (Control.Distributed.Process.Internal.Types.NTCo:Process[0]) <()>_N)))
+                        (UnivCo mkUnsafeCo representational (Control.Distributed.Process.Serializable.SerializableDict
+                                                               (Data.Rank1Typeable.TypVar
+                                                                  Data.Rank1Typeable.Zero,
+                                                                Data.Rank1Typeable.TypVar
+                                                                  (Data.Rank1Typeable.Succ
+                                                                     Data.Rank1Typeable.Zero))
+                                                             -> Control.Distributed.Process.Serializable.SerializableDict
+                                                                  [(Data.Rank1Typeable.TypVar
+                                                                      (Data.Rank1Typeable.Succ
+                                                                         (Data.Rank1Typeable.Succ
+                                                                            Data.Rank1Typeable.Zero)),
+                                                                    Data.Rank1Typeable.TypVar
+                                                                      (Data.Rank1Typeable.Succ
+                                                                         (Data.Rank1Typeable.Succ
+                                                                            (Data.Rank1Typeable.Succ
+                                                                               Data.Rank1Typeable.Zero))))]
+                                                             -> (Control.Distributed.Process.Internal.Types.ProcessId,
+                                                                 Control.Distributed.Process.Internal.Types.ProcessId)
+                                                             -> MapReduce.MapReduce
+                                                                  (Data.Rank1Typeable.TypVar
+                                                                     Data.Rank1Typeable.Zero)
+                                                                  (Data.Rank1Typeable.TypVar
+                                                                     (Data.Rank1Typeable.Succ
+                                                                        Data.Rank1Typeable.Zero))
+                                                                  (Data.Rank1Typeable.TypVar
+                                                                     (Data.Rank1Typeable.Succ
+                                                                        (Data.Rank1Typeable.Succ
+                                                                           Data.Rank1Typeable.Zero)))
+                                                                  (Data.Rank1Typeable.TypVar
+                                                                     (Data.Rank1Typeable.Succ
+                                                                        (Data.Rank1Typeable.Succ
+                                                                           (Data.Rank1Typeable.Succ
+                                                                              Data.Rank1Typeable.Zero))))
+                                                                  (Data.Rank1Typeable.TypVar
+                                                                     (Data.Rank1Typeable.Succ
+                                                                        (Data.Rank1Typeable.Succ
+                                                                           (Data.Rank1Typeable.Succ
+                                                                              (Data.Rank1Typeable.Succ
+                                                                                 Data.Rank1Typeable.Zero)))))
+                                                             -> Control.Distributed.Process.Internal.Types.Process
+                                                                  ()) GHC.Prim.Any))) -}
+262eb07265156bcf4cfcc589ffeeb3ef
+  __remoteTable8 ::
+    Control.Distributed.Process.Serializable.SerializableDict (k1, v1)
+    -> Control.Distributed.Process.Serializable.SerializableDict
+         [(k2, v2)]
+    -> (Control.Distributed.Process.Internal.Types.ProcessId,
+        Control.Distributed.Process.Internal.Types.ProcessId)
+    -> MapReduce.MapReduce k1 v1 k2 v2 v3
+    -> Control.Distributed.Process.Internal.Types.LocalProcess
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 6,
+     Strictness: <L,U><L,U><S,1*U(U(U(U,U,U,U),U,U),U(U(U,U,U,U),U,U))><L,U(C(C1(U)),A)><L,U(U,U,U(U,U,U),U,U,U)><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (6, True, False)
+                (\ @ k1
+                   @ v1
+                   @ k2
+                   @ v2
+                   @ v3
+                   w :: Control.Distributed.Process.Serializable.SerializableDict
+                          (k1, v1)
+                   w1 :: Control.Distributed.Process.Serializable.SerializableDict
+                           [(k2, v2)]
+                   w2 :: (Control.Distributed.Process.Internal.Types.ProcessId,
+                          Control.Distributed.Process.Internal.Types.ProcessId)
+                   w3 :: MapReduce.MapReduce k1 v1 k2 v2 v3
+                   w4 :: Control.Distributed.Process.Internal.Types.LocalProcess
+                   w5 :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case w2 of ww { (,) ww1 ww5 ->
+                 PolyDistrMapReduce.$wa
+                   @ k1
+                   @ v1
+                   @ k2
+                   @ v2
+                   @ v3
+                   w
+                   w1
+                   ww1
+                   ww5
+                   w3
+                   w4
+                   w5 }) -}
+61f94e311a995655dabccf37b8e4b3fc
+  __remoteTable9 :: Data.Rank1Typeable.TypeRep
+  {- Unfolding: (case PolyDistrMapReduce.__remoteTable_w1 of wild2 {
+                   []
+                   -> case GHC.Base.++
+                             @ Data.Typeable.Internal.TypeRep
+                             (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                             PolyDistrMapReduce.__remoteTable12 of wild1 {
+                        []
+                        -> (Data.Typeable.Internal.TypeRep
+                              __word 16275961958878852713
+                              __word 3578558998586661682
+                              (Data.Typeable.Internal.TyCon
+                                 __word 16275961958878852713
+                                 __word 3578558998586661682
+                                 PolyDistrMapReduce.$smatch_ww2
+                                 PolyDistrMapReduce.$stoDynamic_ww2
+                                 PolyDistrMapReduce.$stoDynamic_ww1)
+                              (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                              (GHC.Types.[] @ Data.Typeable.Internal.TypeRep))
+                             `cast`
+                           (Sym (Data.Rank1Typeable.NTCo:TypeRep[0]))
+                        : ipv ipv1
+                        -> case GHC.Fingerprint.fingerprintFingerprints
+                                  (GHC.Types.:
+                                     @ GHC.Fingerprint.Type.Fingerprint
+                                     (GHC.Fingerprint.Type.Fingerprint
+                                        __word 16275961958878852713
+                                        __word 3578558998586661682)
+                                     (let {
+                                        z9 :: [GHC.Fingerprint.Type.Fingerprint]
+                                        = Data.Typeable.Internal.listTc_$sgo ipv ipv1
+                                      } in
+                                      letrec {
+                                        go1 :: [Data.Typeable.Internal.TypeRep]
+                                               -> [GHC.Fingerprint.Type.Fingerprint]
+                                          {- Arity: 1, Strictness: <S,1*U> -}
+                                        = \ ds :: [Data.Typeable.Internal.TypeRep] ->
+                                          case ds of wild3 {
+                                            [] -> z9
+                                            : y ys
+                                            -> case y of wild4 { Data.Typeable.Internal.TypeRep dt1 dt2 ds1 ds2 ds3 ->
+                                               GHC.Types.:
+                                                 @ GHC.Fingerprint.Type.Fingerprint
+                                                 (GHC.Fingerprint.Type.Fingerprint dt1 dt2)
+                                                 (go1 ys) } }
+                                      } in
+                                      go1
+                                        (GHC.Types.[]
+                                           @ Data.Typeable.Internal.KindRep))) of dt1 { GHC.Fingerprint.Type.Fingerprint dt2 dt3 ->
+                           (Data.Typeable.Internal.TypeRep
+                              dt2
+                              dt3
+                              (Data.Typeable.Internal.TyCon
+                                 __word 16275961958878852713
+                                 __word 3578558998586661682
+                                 PolyDistrMapReduce.$smatch_ww2
+                                 PolyDistrMapReduce.$stoDynamic_ww2
+                                 PolyDistrMapReduce.$stoDynamic_ww1)
+                              (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                              wild1)
+                             `cast`
+                           (Sym (Data.Rank1Typeable.NTCo:TypeRep[0])) } }
+                   : ipv ipv1
+                   -> case GHC.Fingerprint.fingerprintFingerprints
+                             PolyDistrMapReduce.__remoteTable10 of dt1 { GHC.Fingerprint.Type.Fingerprint dt2 dt3 ->
+                      case GHC.Base.++
+                             @ Data.Typeable.Internal.TypeRep
+                             wild2
+                             PolyDistrMapReduce.__remoteTable12 of wild1 {
+                        []
+                        -> (Data.Typeable.Internal.TypeRep
+                              __word 16275961958878852713
+                              __word 3578558998586661682
+                              (Data.Typeable.Internal.TyCon
+                                 __word 16275961958878852713
+                                 __word 3578558998586661682
+                                 PolyDistrMapReduce.$smatch_ww2
+                                 PolyDistrMapReduce.$stoDynamic_ww2
+                                 PolyDistrMapReduce.$stoDynamic_ww1)
+                              (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                              (GHC.Types.[] @ Data.Typeable.Internal.TypeRep))
+                             `cast`
+                           (Sym (Data.Rank1Typeable.NTCo:TypeRep[0]))
+                        : ipv2 ipv3
+                        -> case GHC.Fingerprint.fingerprintFingerprints
+                                  (GHC.Types.:
+                                     @ GHC.Fingerprint.Type.Fingerprint
+                                     (GHC.Fingerprint.Type.Fingerprint
+                                        __word 16275961958878852713
+                                        __word 3578558998586661682)
+                                     (let {
+                                        z9 :: [GHC.Fingerprint.Type.Fingerprint]
+                                        = Data.Typeable.Internal.listTc_$sgo ipv2 ipv3
+                                      } in
+                                      letrec {
+                                        go1 :: [Data.Typeable.Internal.TypeRep]
+                                               -> [GHC.Fingerprint.Type.Fingerprint]
+                                          {- Arity: 1, Strictness: <S,1*U> -}
+                                        = \ ds :: [Data.Typeable.Internal.TypeRep] ->
+                                          case ds of wild3 {
+                                            [] -> z9
+                                            : y ys
+                                            -> case y of wild4 { Data.Typeable.Internal.TypeRep dt4 dt5 ds1 ds2 ds3 ->
+                                               GHC.Types.:
+                                                 @ GHC.Fingerprint.Type.Fingerprint
+                                                 (GHC.Fingerprint.Type.Fingerprint dt4 dt5)
+                                                 (go1 ys) } }
+                                      } in
+                                      go1
+                                        (GHC.Types.[]
+                                           @ Data.Typeable.Internal.KindRep))) of dt4 { GHC.Fingerprint.Type.Fingerprint dt5 dt6 ->
+                           (Data.Typeable.Internal.TypeRep
+                              dt5
+                              dt6
+                              (Data.Typeable.Internal.TyCon
+                                 __word 16275961958878852713
+                                 __word 3578558998586661682
+                                 PolyDistrMapReduce.$smatch_ww2
+                                 PolyDistrMapReduce.$stoDynamic_ww2
+                                 PolyDistrMapReduce.$stoDynamic_ww1)
+                              (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                              wild1)
+                             `cast`
+                           (Sym (Data.Rank1Typeable.NTCo:TypeRep[0])) } } } }) -}
+c67bbb408c774a8ff5dd96c2e35f3473
+  __remoteTable_go ::
+    [Data.Typeable.Internal.TypeRep]
+    -> [GHC.Fingerprint.Type.Fingerprint]
+  {- Arity: 1, Strictness: <S,1*U> -}
+ab337ea4bc1224b8865282dd4916376a
+  __remoteTable_go1 ::
+    [Data.Typeable.Internal.TypeRep]
+    -> [GHC.Fingerprint.Type.Fingerprint]
+  {- Arity: 1, Strictness: <S,1*U> -}
+2580ec43a94dc3b8472cfd5a4c5af6f5
+  __remoteTable_w1 :: [Data.Typeable.Internal.TypeRep]
+  {- Unfolding: (GHC.Base.++
+                   @ Data.Typeable.Internal.TypeRep
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   PolyDistrMapReduce.__remoteTable32) -}
+75bf3ce5359be0485bd926762746883b
+  __remoteTable_x :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "PolyDistrMapReduce.mapperProcess"#) -}
+f56309a503c29ca9d2b3b7a016f09cf5
+  distrMapReduce ::
+    (Control.Distributed.Process.Serializable.Serializable k1,
+     Control.Distributed.Process.Serializable.Serializable v1,
+     Control.Distributed.Process.Serializable.Serializable k2,
+     Control.Distributed.Process.Serializable.Serializable v2,
+     Control.Distributed.Process.Serializable.Serializable v3,
+     GHC.Classes.Ord k2) =>
+    Control.Distributed.Static.Static
+      (Control.Distributed.Process.Serializable.SerializableDict
+         (k1, v1))
+    -> Control.Distributed.Static.Static
+         (Control.Distributed.Process.Serializable.SerializableDict
+            [(k2, v2)])
+    -> Control.Distributed.Static.Closure
+         (MapReduce.MapReduce k1 v1 k2 v2 v3)
+    -> [Control.Distributed.Process.Internal.Types.NodeId]
+    -> ((Data.Map.Base.Map k1 v1
+         -> Control.Distributed.Process.Internal.Types.Process
+              (Data.Map.Base.Map k2 v3))
+        -> Control.Distributed.Process.Internal.Types.Process a)
+    -> Control.Distributed.Process.Internal.Types.Process a
+  {- Arity: 6,
+     Strictness: <L,U(1*U,1*U)><L,U(1*U,1*U)><L,U(1*U(C(U(A,U)),C(C1(U))),1*U)><L,U(1*U(C(U(U,U)),U),1*U)><L,1*U(A,1*C1(U))><L,U(A,C(C1(U)),A,A,A,A,A,A)> -}
+f2c67191b73a85970df66497fd19a49a
+  mapperProcess ::
+    Control.Distributed.Process.Serializable.SerializableDict (k1, v1)
+    -> Control.Distributed.Process.Serializable.SerializableDict
+         [(k2, v2)]
+    -> (Control.Distributed.Process.Internal.Types.ProcessId,
+        Control.Distributed.Process.Internal.Types.ProcessId)
+    -> MapReduce.MapReduce k1 v1 k2 v2 v3
+    -> Control.Distributed.Process.Internal.Types.Process ()
+  {- Arity: 6,
+     Strictness: <L,U><L,U><S,1*U(U(U(U,U,U,U),U,U),U(U(U,U,U,U),U,U))><L,U(C(C1(U)),A)><L,U(U,U,U(U,U,U),U,U,U)><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                PolyDistrMapReduce.__remoteTable8
+                  `cast`
+                (forall k1 v1 k2 v2 v3.
+                 <Control.Distributed.Process.Serializable.SerializableDict
+                    (k1, v1)>_R
+                 ->_R <Control.Distributed.Process.Serializable.SerializableDict
+                         [(k2, v2)]>_R
+                 ->_R <(Control.Distributed.Process.Internal.Types.ProcessId,
+                        Control.Distributed.Process.Internal.Types.ProcessId)>_R
+                 ->_R <MapReduce.MapReduce k1 v1 k2 v2 v3>_R
+                 ->_R Trans
+                          (<Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                           ->_R Sym (GHC.Types.NTCo:IO[0] <()>_R))
+                          (Trans
+                               (Sym (Control.Monad.Trans.Reader.NTCo:ReaderT[0]
+                                         <Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                                         <GHC.Types.IO>_R
+                                         <()>_N))
+                               (Sym (Control.Distributed.Process.Internal.Types.NTCo:Process[0]) <()>_N))) -}
+f039627186860088896d48d9a003f300
+  sdictProcessIdPair ::
+    Control.Distributed.Process.Serializable.SerializableDict
+      (Control.Distributed.Process.Internal.Types.ProcessId,
+       Control.Distributed.Process.Internal.Types.ProcessId)
+  {- Unfolding: (Control.Distributed.Process.Serializable.SerializableDict
+                   @ (Control.Distributed.Process.Internal.Types.ProcessId,
+                      Control.Distributed.Process.Internal.Types.ProcessId)
+                   PolyDistrMapReduce.sdictProcessIdPair1) -}
+7c91c1d72ef6e21020939da70b506811
+  sdictProcessIdPair1 ::
+    Control.Distributed.Process.Serializable.Serializable
+      (Control.Distributed.Process.Internal.Types.ProcessId,
+       Control.Distributed.Process.Internal.Types.ProcessId)
+  {- Unfolding: (Control.Distributed.Process.Serializable.$fSerializablea
+                   @ (Control.Distributed.Process.Internal.Types.ProcessId,
+                      Control.Distributed.Process.Internal.Types.ProcessId)
+                   PolyDistrMapReduce.$s$fBinary(,)
+                   PolyDistrMapReduce.sdictProcessIdPair2
+                     `cast`
+                   (Sym (Data.Typeable.Internal.NTCo:Typeable[0]
+                             <*>_N
+                             <(Control.Distributed.Process.Internal.Types.ProcessId,
+                               Control.Distributed.Process.Internal.Types.ProcessId)>_N))) -}
+f696360b027151ad1285ed9e547e94ac
+  sdictProcessIdPair2 ::
+    GHC.Prim.Proxy#
+      (Control.Distributed.Process.Internal.Types.ProcessId,
+       Control.Distributed.Process.Internal.Types.ProcessId)
+    -> Data.Typeable.Internal.TypeRep
+  {- Arity: 1, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ wild :: GHC.Prim.Proxy#
+                             (Control.Distributed.Process.Internal.Types.ProcessId,
+                              Control.Distributed.Process.Internal.Types.ProcessId) ->
+                 PolyDistrMapReduce.$stoDynamic59) -}
+"SPEC/PolyDistrMapReduce $fBinary(,) @ ProcessId @ ProcessId" [ALWAYS] forall $dBinary :: Data.Binary.Class.Binary
+                                                                                            Control.Distributed.Process.Internal.Types.ProcessId
+                                                                              $dBinary1 :: Data.Binary.Class.Binary
+                                                                                             Control.Distributed.Process.Internal.Types.ProcessId
+  Data.Binary.Class.$fBinary(,) @ Control.Distributed.Process.Internal.Types.ProcessId
+                                @ Control.Distributed.Process.Internal.Types.ProcessId
+                                $dBinary
+                                $dBinary1
+  = PolyDistrMapReduce.$s$fBinary(,)
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

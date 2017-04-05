@@ -1,0 +1,926 @@
+
+==================== FINAL INTERFACE ====================
+2017-04-05 15:43:12.119391 UTC
+
+interface main@main:CountWords 7103
+  interface hash: 578df1c3b7253f2cb88ba66f5d92bd89
+  ABI hash: 3ef28eb4d995793216dcfd91b8fe8eee
+  export-list hash: 7403fbf17783311530e7db1fbccdad31
+  orphan hash: 8e989dec4c08419da531755a4b30603a
+  flag hash: 16364aadb6e196600a2e96b67a966ccb
+  sig of: Nothing
+  used TH splices: True
+  where
+exports:
+  CountWords.__remoteTable
+  CountWords.distrCountWords
+  CountWords.localCountWords
+  CountWords.Document
+module dependencies: MapReduce MonoDistrMapReduce
+package dependencies: array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA
+                      base-4.8.2.0 binary-0.7.5.0@binar_3uXFWMoAGBg0xKP9MHKRwi
+                      bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6
+                      containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU
+                      data-accessor-0.2.2.7@dataa_Hzzw7HtnPRc9zDbsSXo8GC
+                      deepseq-1.4.1.1@deeps_6vMKxt5sPFR0XsbRWvvq59
+                      distributed-process-0.6.6@distr_9VZaEnFgXxwKrMu3maGgik
+                      distributed-static-0.3.5.0@distr_JJqLBLOCLpw71ShSeQFdQF
+                      exceptions-0.8.3@excep_BEih2K3eMGTE4cg5iulra8 ghc-prim-0.4.0.0
+                      hashable-1.2.4.0@hasha_EalUWgp8NarBYWPbvYAD8I integer-gmp-1.0.0.0
+                      mtl-2.2.1@mtl_Aue4leSeVkpKLsfHIV51E8
+                      network-transport-0.4.4.0@netwo_6bCeDA9MYREG46JvDrzSZS
+                      pretty-1.1.2.0@prett_JItwetRppk1H5Uq3xbjDGC
+                      random-1.1@rando_9Kgekc9yEaLHLNUuw6paWL
+                      rank1dynamic-0.3.3.0@rank1_GXsj45YFP8FHL10Mvwk235
+                      stm-2.4.4.1@stm_EyxFXFfnfY05IrjGaqCxeD
+                      syb-0.6@syb_4kccWaTe3QZLxAMQYKgEyE template-haskell-2.10.0.0
+                      text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne
+                      time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn
+                      transformers-0.4.2.0@trans_GZTjP9K5WFq01xC9BAGQpF
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+         binary-0.7.5.0@binar_3uXFWMoAGBg0xKP9MHKRwi:Data.Binary.Generic
+         bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6:Data.ByteString.Builder
+         hashable-1.2.4.0@hasha_EalUWgp8NarBYWPbvYAD8I:Data.Hashable.Generic
+         stm-2.4.4.1@stm_EyxFXFfnfY05IrjGaqCxeD:Control.Monad.STM
+         syb-0.6@syb_4kccWaTe3QZLxAMQYKgEyE:Data.Generics.Instances
+         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text
+         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text.Lazy
+         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text.Show
+         time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time.Calendar.Gregorian
+         time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time.Format.Parse
+         time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time.LocalTime.LocalTime
+         transformers-0.4.2.0@trans_GZTjP9K5WFq01xC9BAGQpF:Control.Monad.Trans.Error
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Functor.Identity
+                         base-4.8.2.0:Data.Monoid base-4.8.2.0:Data.Type.Equality
+                         base-4.8.2.0:Data.Void base-4.8.2.0:GHC.Exts
+                         base-4.8.2.0:GHC.Generics
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.IntMap.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.IntSet.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Sequence
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Set.Base
+                         distributed-process-0.6.6@distr_9VZaEnFgXxwKrMu3maGgik:Control.Distributed.Process.Internal.Types
+                         distributed-process-0.6.6@distr_9VZaEnFgXxwKrMu3maGgik:Control.Distributed.Process.Management.Internal.Table
+                         distributed-process-0.6.6@distr_9VZaEnFgXxwKrMu3maGgik:Control.Distributed.Process.Management.Internal.Trace.Types
+                         distributed-process-0.6.6@distr_9VZaEnFgXxwKrMu3maGgik:Control.Distributed.Process.Management.Internal.Types
+                         network-transport-0.4.4.0@netwo_6bCeDA9MYREG46JvDrzSZS:Network.Transport
+                         pretty-1.1.2.0@prett_JItwetRppk1H5Uq3xbjDGC:Text.PrettyPrint.HughesPJ
+                         template-haskell-2.10.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text
+                         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text.Lazy
+import  -/  base-4.8.2.0:Data.Foldable 2ce969969ad5231eb40bd713f94f05ad
+import  -/  base-4.8.2.0:Data.OldList d8fd80b0e14aa085ce6219cd89dad356
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.IO bb5b81adcea33b14bd4abe16d7dde45f
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  binary-0.7.5.0@binar_3uXFWMoAGBg0xKP9MHKRwi:Data.Binary 8384d103fc9149c36c5489e79a596d51
+import  -/  containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map.Base 642e37808d03e24efbe8e8ff1336f343
+import  -/  distributed-process-0.6.6@distr_9VZaEnFgXxwKrMu3maGgik:Control.Distributed.Process 86f028da50d3c701496e9b31d4794722
+import  -/  distributed-process-0.6.6@distr_9VZaEnFgXxwKrMu3maGgik:Control.Distributed.Process.Closure 67f76da5442e0b1004d46cd93cb229ee
+import  -/  distributed-process-0.6.6@distr_9VZaEnFgXxwKrMu3maGgik:Control.Distributed.Process.Internal.Closure.BuiltIn 77ae4c257e80b1bd46043c94e53e22bd
+import  -/  distributed-process-0.6.6@distr_9VZaEnFgXxwKrMu3maGgik:Control.Distributed.Process.Internal.Closure.TH 515b2cd9968a327e4e1ad12a872959c6
+import  -/  distributed-process-0.6.6@distr_9VZaEnFgXxwKrMu3maGgik:Control.Distributed.Process.Internal.Types 04c4c9c6c4e25a3c41f7f0a5dab92823
+import  -/  distributed-process-0.6.6@distr_9VZaEnFgXxwKrMu3maGgik:Control.Distributed.Process.Serializable ddfcc3b11eb074dead990ad7a076ed9b
+import  -/  distributed-static-0.3.5.0@distr_JJqLBLOCLpw71ShSeQFdQF:Control.Distributed.Static 298d1d8e8cb149ff7c7e81c09550a87c
+import  -/  MapReduce 5556cd11811b0234831661716bdb600a
+  exports: ec8d6e4dededa0919450aaa3f9425d9f
+  MapReduce 132e77039b3c1ea2a194683ac753eb8c
+  MapReduce 4c3fbf994626b48a538779768ef7c8d9
+  localMapReduce 76397c18caaabafe69977fea83bdb3a4
+  mrMap c60c5dcc00b2960e3096b707e6201e85
+  mrReduce 7699baee0c104a55b9695f04e0678112
+import  -/  MonoDistrMapReduce 40da236f1b7cc68929c39ec2f8ba64a6
+  exports: 79f62a0b71e4ccfccf707653a6e6a91c
+  distrMapReduce 680d26778c4e8c4f661dee9cbecb0e17
+import  -/  rank1dynamic-0.3.3.0@rank1_GXsj45YFP8FHL10Mvwk235:Data.Rank1Dynamic 10b9168e677cbcd3d256f66a634c0b75
+addDependentFile "/home/kanika/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/include/ghcversion.h"
+addDependentFile ".stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/autogen/cabal_macros.h"
+addDependentFile "/usr/include/stdc-predef.h"
+ddb59680cb372098bd87fc39f9a898c7
+  $ssum :: [CountWords.Frequency] -> CountWords.Frequency
+  {- Arity: 1, HasNoCafRefs, Inline: INLINE (sat-args=0),
+     Unfolding: InlineRule (0, False, False)
+                (GHC.List.foldl
+                   @ CountWords.Frequency
+                   @ CountWords.Frequency
+                   GHC.Num.$fNumInt_$c+
+                   (GHC.Types.I# 0)) -}
+e2306e84136f75a55e97d15fa1da5a24
+  $stoDynamic10 :: [GHC.Fingerprint.Type.Fingerprint]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Fingerprint.Type.Fingerprint
+                   CountWords.$stoDynamic12
+                   CountWords.$stoDynamic11) -}
+82f1fdc7b1d5c28331f28ff722791ac2
+  $stoDynamic11 :: [GHC.Fingerprint.Type.Fingerprint]
+  {- Unfolding: (CountWords.$stoDynamic_go1
+                   (GHC.Types.[] @ Data.Typeable.Internal.KindRep)) -}
+c4e0801aa3945742a6012105e924844c
+  $stoDynamic12 :: GHC.Fingerprint.Type.Fingerprint
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Fingerprint.Type.Fingerprint
+                   __word 17730107610217102821
+                   __word 9866972337190828755) -}
+d73b2cd48c05fa2bc984b980841d3e79
+  $stoDynamic13 :: [Data.Typeable.Internal.TypeRep]
+  {- Unfolding: (GHC.Types.:
+                   @ Data.Typeable.Internal.TypeRep
+                   CountWords.$stoDynamic14
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)) -}
+d787d2e60ee00e6d33dd5b1e5cd67c92
+  $stoDynamic14 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (Data.Typeable.Internal.TypeRep
+                   __word 16781394633280494409
+                   __word 2520638044472077920
+                   CountWords.$stoDynamic15
+                   (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)) -}
+7ac1e9fec0ed5456180514f9cc2b1802
+  $stoDynamic15 :: Data.Typeable.Internal.TyCon
+  {- Unfolding: (Data.Typeable.Internal.TyCon
+                   __word 16781394633280494409
+                   __word 2520638044472077920
+                   CountWords.$stoDynamic_ww5
+                   CountWords.$stoDynamic_ww1
+                   CountWords.$stoDynamic16) -}
+9741eace2edeb48420c7bb74e8348c65
+  $stoDynamic16 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Char"#) -}
+8fe69b26be7cbbc6a87dbd2c36812830
+  $stoDynamic20 :: GHC.Fingerprint.Type.Fingerprint
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Fingerprint.Type.Fingerprint
+                   __word 16275961958878852713
+                   __word 3578558998586661682) -}
+8b9d4b88cca966060d2651ecd4856af9
+  $stoDynamic21 :: [Data.Typeable.Internal.TypeRep]
+  {- Unfolding: (GHC.Types.:
+                   @ Data.Typeable.Internal.TypeRep
+                   CountWords.$stoDynamic22
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)) -}
+dc960ebda4833cc30ed9e4b3113c668c
+  $stoDynamic22 :: Data.Typeable.Internal.TypeRep
+  {- Strictness: m,
+     Unfolding: (Data.Typeable.Internal.TypeRep
+                   __word 15843165073189925570
+                   __word 13730769858450861905
+                   CountWords.$stoDynamic_wild3
+                   (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)) -}
+38913413845b4c00ff0ac96d5b85e6f0
+  $stoDynamic25 :: GHC.Fingerprint.Type.Fingerprint
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Fingerprint.Type.Fingerprint
+                   __word 178358391531745606
+                   __word 14321957899964785745) -}
+dabad7e60714118e0751ea54571ee633
+  $stoDynamic26 :: Data.Typeable.Internal.TyCon
+  {- Unfolding: (Data.Typeable.Internal.TyCon
+                   __word 178358391531745606
+                   __word 14321957899964785745
+                   CountWords.$stoDynamic_ww13
+                   CountWords.$stoDynamic_ww12
+                   CountWords.$stoDynamic_ww11) -}
+5fb5134cf97db5fd4007078eda2d16db
+  $stoDynamic5 :: GHC.Fingerprint.Type.Fingerprint
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Fingerprint.Type.Fingerprint
+                   __word 1091321823365361407
+                   __word 18149233857709920763) -}
+12c0a24220b2c15f2d3aae6f3643df3d
+  $stoDynamic6 :: [Data.Typeable.Internal.TypeRep]
+  {- Unfolding: (GHC.Types.:
+                   @ Data.Typeable.Internal.TypeRep
+                   CountWords.$stoDynamic7
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)) -}
+30e6610b89d630aecf585f7e7a8cad72
+  $stoDynamic7 :: Data.Typeable.Internal.TypeRep
+  {- Strictness: m,
+     Unfolding: (Data.Typeable.Internal.TypeRep
+                   __word 16287469036901857884
+                   __word 16587023596664995632
+                   CountWords.$stoDynamic_wild
+                   (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)) -}
+6cf57a3050e025d80c5fab0302b3f2da
+  $stoDynamic8 :: [Data.Typeable.Internal.TypeRep]
+  {- Unfolding: (GHC.Types.:
+                   @ Data.Typeable.Internal.TypeRep
+                   CountWords.$stoDynamic9
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)) -}
+23c594273585bb524e3744565c98855f
+  $stoDynamic9 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case CountWords.$stoDynamic_w1 of wild2 {
+                   []
+                   -> Data.Typeable.Internal.TypeRep
+                        __word 17730107610217102821
+                        __word 9866972337190828755
+                        CountWords.$stoDynamic_wild1
+                        (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                        (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   : ipv ipv1
+                   -> case GHC.Fingerprint.fingerprintFingerprints
+                             CountWords.$stoDynamic10 of dt { GHC.Fingerprint.Type.Fingerprint dt1 dt2 ->
+                      Data.Typeable.Internal.TypeRep
+                        dt1
+                        dt2
+                        CountWords.$stoDynamic_wild1
+                        (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                        wild2 } }) -}
+38f06314b0d47b7bea54201d687f3a3c
+  $stoDynamic_go1 ::
+    [Data.Typeable.Internal.TypeRep]
+    -> [GHC.Fingerprint.Type.Fingerprint]
+  {- Arity: 1, Strictness: <S,1*U> -}
+49d57facd3a48eedcde3202f316cf0fb
+  $stoDynamic_w1 :: [Data.Typeable.Internal.TypeRep]
+  {- Unfolding: (GHC.Base.++
+                   @ Data.Typeable.Internal.TypeRep
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   CountWords.$stoDynamic13) -}
+d6f848707d83dab00100d94451dcdacd
+  $stoDynamic_w2 :: [Data.Typeable.Internal.TypeRep]
+  {- Unfolding: (GHC.Base.++
+                   @ Data.Typeable.Internal.TypeRep
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   CountWords.$stoDynamic8) -}
+32124d5bf8d6fde37454a4f56425fe69
+  $stoDynamic_w3 :: [Data.Typeable.Internal.TypeRep]
+  {- Unfolding: (GHC.Base.++
+                   @ Data.Typeable.Internal.TypeRep
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                   CountWords.$stoDynamic21) -}
+70ad807b1574fbcf728bf4e121573939
+  $stoDynamic_wild :: Data.Typeable.Internal.TyCon
+  {- Strictness: m,
+     Unfolding: (Data.Typeable.Internal.TyCon
+                   __word 16287469036901857884
+                   __word 16587023596664995632
+                   CountWords.$stoDynamic_ww5
+                   CountWords.$stoDynamic_ww1
+                   CountWords.$stoDynamic_ww4) -}
+12e636f2efd8c58c8c1a7c1c232d88df
+  $stoDynamic_wild1 :: Data.Typeable.Internal.TyCon
+  {- Strictness: m,
+     Unfolding: (Data.Typeable.Internal.TyCon
+                   __word 17730107610217102821
+                   __word 9866972337190828755
+                   CountWords.$stoDynamic_ww5
+                   CountWords.$stoDynamic_ww1
+                   CountWords.$stoDynamic_ww6) -}
+d04b3423f91b4f79d7a0454b7ce079cb
+  $stoDynamic_wild3 :: Data.Typeable.Internal.TyCon
+  {- Strictness: m,
+     Unfolding: (Data.Typeable.Internal.TyCon
+                   __word 15843165073189925570
+                   __word 13730769858450861905
+                   CountWords.$stoDynamic_ww5
+                   CountWords.$stoDynamic_ww10
+                   CountWords.$stoDynamic_ww9) -}
+5bfd8e9a2a735e8a66ee5d6d534cd9d3
+  $stoDynamic_ww1 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# "GHC.Types"#) -}
+f2c1f880f2a7a7f734ee157d250bd8b0
+  $stoDynamic_ww10 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# "GHC.Tuple"#) -}
+700c097e683171dabc24e961e47cd37e
+  $stoDynamic_ww11 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# "SerializableDict"#) -}
+ca58537a228882e8c1ab82c6eeb6247d
+  $stoDynamic_ww12 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "Control.Distributed.Process.Serializable"#) -}
+a7202eacf1eb43d809ae1b62e3735033
+  $stoDynamic_ww13 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "distr_9VZaEnFgXxwKrMu3maGgik"#) -}
+51e05b0cac443f79cdb036384a1111bd
+  $stoDynamic_ww2 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# "main"#) -}
+bcc8fe20fc2b607aa00665bef6a7be7c
+  $stoDynamic_ww3 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# "MapReduce"#) -}
+ad7602721c5def2b16270e48f88a1719
+  $stoDynamic_ww4 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# "Int"#) -}
+398b3156f414952ce4350153f1fd35b3
+  $stoDynamic_ww5 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# "ghc-prim"#) -}
+4db2ac4e2ad9065190591b5f50368dac
+  $stoDynamic_ww6 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# "[]"#) -}
+82d635bc8516602ae7c92ffd85492735
+  $stoDynamic_ww7 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# "(->)"#) -}
+d29857b499cdf58a7b5f51012d13d740
+  $stoDynamic_ww8 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# "GHC.Prim"#) -}
+d19c5afe779491fbc580e7a92bda702d
+  $stoDynamic_ww9 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString# "()"#) -}
+44114010c88a0afb403cfc43c468795b
+  $w$j1 ::
+    GHC.Prim.Word#
+    -> GHC.Prim.Word#
+    -> GHC.Base.String
+    -> GHC.Base.String
+    -> GHC.Base.String
+    -> [Data.Typeable.Internal.KindRep]
+    -> [Data.Typeable.Internal.TypeRep]
+    -> (# GHC.Prim.Word#,
+          GHC.Prim.Word#,
+          Data.Typeable.Internal.TyCon,
+          [Data.Typeable.Internal.KindRep],
+          [Data.Typeable.Internal.TypeRep] #)
+  {- Arity: 7, Strictness: <L,U><L,U><L,U><L,U><L,U><S,U><L,1*U>,
+     Inline: [0],
+     Unfolding: (\ ww :: GHC.Prim.Word#[OneShot]
+                   ww1 :: GHC.Prim.Word#[OneShot]
+                   ww2 :: GHC.Base.String[OneShot]
+                   ww3 :: GHC.Base.String[OneShot]
+                   ww4 :: GHC.Base.String[OneShot]
+                   w :: [Data.Typeable.Internal.KindRep][OneShot]
+                   w1 :: [Data.Typeable.Internal.TypeRep][OneShot] ->
+                 case Data.Typeable.Internal.$wmkPolyTyConApp
+                        ww
+                        ww1
+                        ww2
+                        ww3
+                        ww4
+                        w
+                        (GHC.Base.++
+                           @ Data.Typeable.Internal.TypeRep
+                           w1
+                           CountWords.$stoDynamic8) of ww6 { (#,,,,#) ww7 ww8 ww9 ww10 ww11 ->
+                 case ww9 of ww5 { Data.Typeable.Internal.TyCon ww12 ww13 ww14 ww15 ww16 ->
+                 case Data.Typeable.Internal.$wmkPolyTyConApp
+                        ww12
+                        ww13
+                        ww14
+                        ww15
+                        ww16
+                        ww10
+                        (GHC.Base.++
+                           @ Data.Typeable.Internal.TypeRep
+                           ww11
+                           CountWords.$stoDynamic8) of ww17 { (#,,,,#) ww18 ww19 ww20 ww21 ww22 ->
+                 case ww20 of ww23 { Data.Typeable.Internal.TyCon ww24 ww25 ww26 ww27 ww28 ->
+                 case Data.Typeable.Internal.$wmkPolyTyConApp
+                        ww24
+                        ww25
+                        ww26
+                        ww27
+                        ww28
+                        ww21
+                        (GHC.Base.++
+                           @ Data.Typeable.Internal.TypeRep
+                           ww22
+                           CountWords.$stoDynamic6) of ww29 { (#,,,,#) ww30 ww31 ww32 ww33 ww34 ->
+                 case ww32 of ww35 { Data.Typeable.Internal.TyCon ww36 ww37 ww38 ww39 ww40 ->
+                 Data.Typeable.Internal.$wmkPolyTyConApp
+                   ww36
+                   ww37
+                   ww38
+                   ww39
+                   ww40
+                   ww33
+                   (GHC.Base.++
+                      @ Data.Typeable.Internal.TypeRep
+                      ww34
+                      CountWords.$stoDynamic6) } } } } } }) -}
+5467e73aac74e1ccac7d2848641c6b0b
+  type Document = GHC.Base.String
+d03d19d6c905d6bd5bdda4f048c71455
+  type Frequency = GHC.Types.Int
+7cdf8806c9514656d55180d1f8bbe9da
+  type Word = GHC.Base.String
+f3b798d8f5defb7c6237a1a2836e267d
+  __remoteTable ::
+    Control.Distributed.Static.RemoteTable
+    -> Control.Distributed.Static.RemoteTable
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                CountWords.__remoteTable1
+                  `cast`
+                (<Control.Distributed.Static.RemoteTable>_R
+                 ->_R Sym (Control.Distributed.Static.NTCo:RemoteTable[0])) -}
+9780584299f061cbe03945012e2c296a
+  __remoteTable1 ::
+    Control.Distributed.Static.RemoteTable
+    -> Data.Map.Base.Map GHC.Base.String Data.Rank1Dynamic.Dynamic
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ x :: Control.Distributed.Static.RemoteTable ->
+                 Control.Distributed.Static.$sinsert_$sgo10
+                   @ Data.Rank1Dynamic.Dynamic
+                   CountWords.__remoteTable_x1
+                   CountWords.__remoteTable9
+                   (Control.Distributed.Static.$sinsert_$sgo10
+                      @ Data.Rank1Dynamic.Dynamic
+                      CountWords.__remoteTable_x
+                      CountWords.__remoteTable2
+                      x `cast` (Control.Distributed.Static.NTCo:RemoteTable[0]))) -}
+37674f93cef21da5704ade85c3259a26
+  __remoteTable10 :: Data.Rank1Typeable.TypeRep
+  {- Unfolding: (case CountWords.$stoDynamic_w3 of wild2 {
+                   []
+                   -> case GHC.Base.++
+                             @ Data.Typeable.Internal.TypeRep
+                             (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)
+                             CountWords.__remoteTable13 of wild1 {
+                        []
+                        -> (Data.Typeable.Internal.TypeRep
+                              __word 16275961958878852713
+                              __word 3578558998586661682
+                              (Data.Typeable.Internal.TyCon
+                                 __word 16275961958878852713
+                                 __word 3578558998586661682
+                                 CountWords.$stoDynamic_ww5
+                                 CountWords.$stoDynamic_ww8
+                                 CountWords.$stoDynamic_ww7)
+                              (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                              (GHC.Types.[] @ Data.Typeable.Internal.TypeRep))
+                             `cast`
+                           (Sym (Data.Rank1Typeable.NTCo:TypeRep[0]))
+                        : ipv ipv1
+                        -> case GHC.Fingerprint.fingerprintFingerprints
+                                  (GHC.Types.:
+                                     @ GHC.Fingerprint.Type.Fingerprint
+                                     (GHC.Fingerprint.Type.Fingerprint
+                                        __word 16275961958878852713
+                                        __word 3578558998586661682)
+                                     (let {
+                                        z3 :: [GHC.Fingerprint.Type.Fingerprint]
+                                        = Data.Typeable.Internal.listTc_$sgo ipv ipv1
+                                      } in
+                                      letrec {
+                                        go1 :: [Data.Typeable.Internal.TypeRep]
+                                               -> [GHC.Fingerprint.Type.Fingerprint]
+                                          {- Arity: 1, Strictness: <S,1*U> -}
+                                        = \ ds :: [Data.Typeable.Internal.TypeRep] ->
+                                          case ds of wild3 {
+                                            [] -> z3
+                                            : y ys
+                                            -> case y of wild4 { Data.Typeable.Internal.TypeRep dt dt1 ds1 ds2 ds3 ->
+                                               GHC.Types.:
+                                                 @ GHC.Fingerprint.Type.Fingerprint
+                                                 (GHC.Fingerprint.Type.Fingerprint dt dt1)
+                                                 (go1 ys) } }
+                                      } in
+                                      go1
+                                        (GHC.Types.[]
+                                           @ Data.Typeable.Internal.KindRep))) of dt { GHC.Fingerprint.Type.Fingerprint dt1 dt2 ->
+                           (Data.Typeable.Internal.TypeRep
+                              dt1
+                              dt2
+                              (Data.Typeable.Internal.TyCon
+                                 __word 16275961958878852713
+                                 __word 3578558998586661682
+                                 CountWords.$stoDynamic_ww5
+                                 CountWords.$stoDynamic_ww8
+                                 CountWords.$stoDynamic_ww7)
+                              (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                              wild1)
+                             `cast`
+                           (Sym (Data.Rank1Typeable.NTCo:TypeRep[0])) } }
+                   : ipv ipv1
+                   -> case GHC.Fingerprint.fingerprintFingerprints
+                             CountWords.__remoteTable11 of dt { GHC.Fingerprint.Type.Fingerprint dt1 dt2 ->
+                      case GHC.Base.++
+                             @ Data.Typeable.Internal.TypeRep
+                             wild2
+                             CountWords.__remoteTable13 of wild1 {
+                        []
+                        -> (Data.Typeable.Internal.TypeRep
+                              __word 16275961958878852713
+                              __word 3578558998586661682
+                              (Data.Typeable.Internal.TyCon
+                                 __word 16275961958878852713
+                                 __word 3578558998586661682
+                                 CountWords.$stoDynamic_ww5
+                                 CountWords.$stoDynamic_ww8
+                                 CountWords.$stoDynamic_ww7)
+                              (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                              (GHC.Types.[] @ Data.Typeable.Internal.TypeRep))
+                             `cast`
+                           (Sym (Data.Rank1Typeable.NTCo:TypeRep[0]))
+                        : ipv2 ipv3
+                        -> case GHC.Fingerprint.fingerprintFingerprints
+                                  (GHC.Types.:
+                                     @ GHC.Fingerprint.Type.Fingerprint
+                                     (GHC.Fingerprint.Type.Fingerprint
+                                        __word 16275961958878852713
+                                        __word 3578558998586661682)
+                                     (let {
+                                        z3 :: [GHC.Fingerprint.Type.Fingerprint]
+                                        = Data.Typeable.Internal.listTc_$sgo ipv2 ipv3
+                                      } in
+                                      letrec {
+                                        go1 :: [Data.Typeable.Internal.TypeRep]
+                                               -> [GHC.Fingerprint.Type.Fingerprint]
+                                          {- Arity: 1, Strictness: <S,1*U> -}
+                                        = \ ds :: [Data.Typeable.Internal.TypeRep] ->
+                                          case ds of wild3 {
+                                            [] -> z3
+                                            : y ys
+                                            -> case y of wild4 { Data.Typeable.Internal.TypeRep dt4 dt5 ds1 ds2 ds3 ->
+                                               GHC.Types.:
+                                                 @ GHC.Fingerprint.Type.Fingerprint
+                                                 (GHC.Fingerprint.Type.Fingerprint dt4 dt5)
+                                                 (go1 ys) } }
+                                      } in
+                                      go1
+                                        (GHC.Types.[]
+                                           @ Data.Typeable.Internal.KindRep))) of dt4 { GHC.Fingerprint.Type.Fingerprint dt5 dt6 ->
+                           (Data.Typeable.Internal.TypeRep
+                              dt5
+                              dt6
+                              (Data.Typeable.Internal.TyCon
+                                 __word 16275961958878852713
+                                 __word 3578558998586661682
+                                 CountWords.$stoDynamic_ww5
+                                 CountWords.$stoDynamic_ww8
+                                 CountWords.$stoDynamic_ww7)
+                              (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                              wild1)
+                             `cast`
+                           (Sym (Data.Rank1Typeable.NTCo:TypeRep[0])) } } } }) -}
+157c6f7b3402f6562a9395b019fd9a21
+  __remoteTable11 :: [GHC.Fingerprint.Type.Fingerprint]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Fingerprint.Type.Fingerprint
+                   CountWords.$stoDynamic20
+                   CountWords.__remoteTable12) -}
+943daad14364b53f27f082fc987b0d69
+  __remoteTable12 :: [GHC.Fingerprint.Type.Fingerprint]
+  {- Unfolding: (CountWords.__remoteTable_go1
+                   (GHC.Types.[] @ Data.Typeable.Internal.KindRep)) -}
+d7015e47f9725046d54604ab174842a6
+  __remoteTable13 :: [Data.Typeable.Internal.TypeRep]
+  {- Unfolding: (GHC.Types.:
+                   @ Data.Typeable.Internal.TypeRep
+                   CountWords.__remoteTable14
+                   (GHC.Types.[] @ Data.Typeable.Internal.TypeRep)) -}
+2713ac933585f18524e0433877ec9a08
+  __remoteTable14 :: Data.Typeable.Internal.TypeRep
+  {- Unfolding: (case CountWords.$stoDynamic_w2 of wild2 {
+                   []
+                   -> case CountWords.$w$j1
+                             __word 1091321823365361407
+                             __word 18149233857709920763
+                             CountWords.$stoDynamic_ww2
+                             CountWords.$stoDynamic_ww3
+                             CountWords.$stoDynamic_ww3
+                             (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                             (GHC.Types.[]
+                                @ Data.Typeable.Internal.TypeRep) of ww { (#,,,,#) ww1 ww2 ww3 ww4 ww5 ->
+                      Data.Typeable.Internal.TypeRep ww1 ww2 ww3 ww4 ww5 }
+                   : ipv ipv1
+                   -> case GHC.Fingerprint.fingerprintFingerprints
+                             (GHC.Types.:
+                                @ GHC.Fingerprint.Type.Fingerprint
+                                CountWords.$stoDynamic5
+                                (let {
+                                   z3 :: [GHC.Fingerprint.Type.Fingerprint]
+                                   = Data.Typeable.Internal.listTc_$sgo ipv ipv1
+                                 } in
+                                 letrec {
+                                   go1 :: [Data.Typeable.Internal.TypeRep]
+                                          -> [GHC.Fingerprint.Type.Fingerprint]
+                                     {- Arity: 1, Strictness: <S,1*U> -}
+                                   = \ ds :: [Data.Typeable.Internal.TypeRep] ->
+                                     case ds of wild1 {
+                                       [] -> z3
+                                       : y ys
+                                       -> case y of wild4 { Data.Typeable.Internal.TypeRep dt dt1 ds1 ds2 ds3 ->
+                                          GHC.Types.:
+                                            @ GHC.Fingerprint.Type.Fingerprint
+                                            (GHC.Fingerprint.Type.Fingerprint dt dt1)
+                                            (go1 ys) } }
+                                 } in
+                                 go1
+                                   (GHC.Types.[]
+                                      @ Data.Typeable.Internal.KindRep))) of dt { GHC.Fingerprint.Type.Fingerprint dt1 dt2 ->
+                      case CountWords.$w$j1
+                             __word 1091321823365361407
+                             __word 18149233857709920763
+                             CountWords.$stoDynamic_ww2
+                             CountWords.$stoDynamic_ww3
+                             CountWords.$stoDynamic_ww3
+                             (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                             wild2 of ww { (#,,,,#) ww1 ww2 ww3 ww4 ww5 ->
+                      Data.Typeable.Internal.TypeRep ww1 ww2 ww3 ww4 ww5 } } }) -}
+9263a56d22439a117691c3ce8bc116cd
+  __remoteTable2 :: Data.Rank1Dynamic.Dynamic
+  {- Strictness: m,
+     Unfolding: (Data.Rank1Dynamic.Dynamic
+                   CountWords.__remoteTable6
+                   CountWords.__remoteTable3
+                     `cast`
+                   (UnivCo mkUnsafeCo representational (Control.Distributed.Process.Serializable.SerializableDict
+                                                          ()) GHC.Prim.Any)) -}
+e1888ad1b2efd45190a549bfd2d87b18
+  __remoteTable3 ::
+    Control.Distributed.Process.Serializable.SerializableDict ()
+  {- Unfolding: (Control.Distributed.Process.Serializable.SerializableDict
+                   @ ()
+                   CountWords.__remoteTable4) -}
+20b029bfcaa3f1cb6136b7ab5ea917b4
+  __remoteTable4 ::
+    Control.Distributed.Process.Serializable.Serializable ()
+  {- Unfolding: (Control.Distributed.Process.Serializable.$fSerializablea
+                   @ ()
+                   Data.Binary.Class.$fBinary()
+                   CountWords.__remoteTable5
+                     `cast`
+                   (Sym (Data.Typeable.Internal.NTCo:Typeable[0] <*>_N <()>_N))) -}
+93b838a8568eff885ed6a5205771a8bc
+  __remoteTable5 ::
+    GHC.Prim.Proxy# () -> Data.Typeable.Internal.TypeRep
+  {- Arity: 1, Strictness: <L,A>m,
+     Unfolding: InlineRule (1, True, True)
+                (\ wild :: GHC.Prim.Proxy# () -> CountWords.$stoDynamic22) -}
+a01666e104c29a525240a8f7d4b8c987
+  __remoteTable6 :: Data.Rank1Typeable.TypeRep
+  {- Unfolding: (case CountWords.$stoDynamic_w3 of wild2 {
+                   []
+                   -> (Data.Typeable.Internal.TypeRep
+                         __word 178358391531745606
+                         __word 14321957899964785745
+                         CountWords.$stoDynamic26
+                         (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                         (GHC.Types.[] @ Data.Typeable.Internal.TypeRep))
+                        `cast`
+                      (Sym (Data.Rank1Typeable.NTCo:TypeRep[0]))
+                   : ipv ipv1
+                   -> case GHC.Fingerprint.fingerprintFingerprints
+                             CountWords.__remoteTable7 of dt { GHC.Fingerprint.Type.Fingerprint dt1 dt2 ->
+                      (Data.Typeable.Internal.TypeRep
+                         dt1
+                         dt2
+                         CountWords.$stoDynamic26
+                         (GHC.Types.[] @ Data.Typeable.Internal.KindRep)
+                         wild2)
+                        `cast`
+                      (Sym (Data.Rank1Typeable.NTCo:TypeRep[0])) } }) -}
+946b39a1e76c1d482743920051163234
+  __remoteTable7 :: [GHC.Fingerprint.Type.Fingerprint]
+  {- Unfolding: (GHC.Types.:
+                   @ GHC.Fingerprint.Type.Fingerprint
+                   CountWords.$stoDynamic25
+                   CountWords.__remoteTable8) -}
+b8098fcd991825d56ebb4e10550a50f0
+  __remoteTable8 :: [GHC.Fingerprint.Type.Fingerprint]
+  {- Unfolding: (CountWords.__remoteTable_go
+                   (GHC.Types.[] @ Data.Typeable.Internal.KindRep)) -}
+5ac49c1ef5873ad663b638a19317f857
+  __remoteTable9 :: Data.Rank1Dynamic.Dynamic
+  {- Strictness: m,
+     Unfolding: (Data.Rank1Dynamic.Dynamic
+                   CountWords.__remoteTable10
+                   CountWords.countWords_
+                     `cast`
+                   (UnivCo mkUnsafeCo representational (()
+                                                        -> MapReduce.MapReduce
+                                                             GHC.IO.FilePath
+                                                             CountWords.Document
+                                                             CountWords.Word
+                                                             CountWords.Frequency
+                                                             CountWords.Frequency) GHC.Prim.Any)) -}
+fa3a6dd8c653e891faa1c1a009eac35b
+  __remoteTable_go ::
+    [Data.Typeable.Internal.TypeRep]
+    -> [GHC.Fingerprint.Type.Fingerprint]
+  {- Arity: 1, Strictness: <S,1*U> -}
+d6eb48ef63e1c0897799a2f3f98e6977
+  __remoteTable_go1 ::
+    [Data.Typeable.Internal.TypeRep]
+    -> [GHC.Fingerprint.Type.Fingerprint]
+  {- Arity: 1, Strictness: <S,1*U> -}
+bfed55fa330074adc2435c8e700a8241
+  __remoteTable_x :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "CountWords.countWords___sdict"#) -}
+20e9c3cf7ad66cd58456a2b75dc969eb
+  __remoteTable_x1 :: GHC.Base.String
+  {- Unfolding: (GHC.CString.unpackCString#
+                   "CountWords.countWords_"#) -}
+e5b49b4305fac952e4d652aeabff218a
+  countWords ::
+    MapReduce.MapReduce
+      GHC.IO.FilePath
+      CountWords.Document
+      CountWords.Word
+      CountWords.Frequency
+      CountWords.Frequency
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (MapReduce.MapReduce
+                   @ GHC.IO.FilePath
+                   @ CountWords.Document
+                   @ CountWords.Word
+                   @ CountWords.Frequency
+                   @ CountWords.Frequency
+                   CountWords.countWords_2
+                   CountWords.countWords_1) -}
+c285f3718d30407a502a68299712f2d3
+  countWords_ ::
+    ()
+    -> MapReduce.MapReduce
+         GHC.IO.FilePath
+         CountWords.Document
+         CountWords.Word
+         CountWords.Frequency
+         CountWords.Frequency
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*H>m,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: () -> case ds of wild { () -> CountWords.countWords }) -}
+76c5422a368cab3358cfebe31c9eecb8
+  countWords_1 ::
+    CountWords.Word -> [CountWords.Frequency] -> CountWords.Frequency
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: CountWords.Word eta :: [CountWords.Frequency] ->
+                 GHC.Base.foldr
+                   @ CountWords.Frequency
+                   @ (CountWords.Frequency -> CountWords.Frequency)
+                   (\ ds1 :: CountWords.Frequency
+                      ds2 :: CountWords.Frequency -> CountWords.Frequency[OneShot]
+                      tpl :: CountWords.Frequency[OneShot] ->
+                    ds2 (GHC.Num.$fNumInt_$c+ tpl ds1))
+                   (GHC.Base.id @ CountWords.Frequency)
+                   eta
+                   (GHC.Types.I# 0)) -}
+f71784f68bcdf648604e3eef191af2f6
+  countWords_2 ::
+    GHC.IO.FilePath
+    -> CountWords.Document -> [(CountWords.Word, CountWords.Frequency)]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ ds :: GHC.IO.FilePath eta :: CountWords.Document ->
+                 CountWords.countWords_3 eta) -}
+8410dd039e40ee596132dff5da265265
+  countWords_3 ::
+    CountWords.Document -> [(CountWords.Word, CountWords.Frequency)]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ x :: CountWords.Document ->
+                 Data.OldList.wordsFB
+                   @ [(CountWords.Word, CountWords.Frequency)]
+                   (\ x1 :: [GHC.Types.Char]
+                      ys :: [(CountWords.Word, CountWords.Frequency)][OneShot] ->
+                    GHC.Types.:
+                      @ (CountWords.Word, CountWords.Frequency)
+                      (x1, CountWords.countWords_4)
+                      ys)
+                   (GHC.Types.[] @ (CountWords.Word, CountWords.Frequency))
+                   x) -}
+5f629ab049f89a4ccb534071f74ab83f
+  countWords_4 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1) -}
+176f7811a470f36ee09880a683918dab
+  distrCountWords ::
+    [Control.Distributed.Process.Internal.Types.NodeId]
+    -> Data.Map.Base.Map GHC.IO.FilePath CountWords.Document
+    -> Control.Distributed.Process.Internal.Types.Process
+         (Data.Map.Base.Map CountWords.Word CountWords.Frequency)
+  {- Arity: 4,
+     Unfolding: InlineRule (0, True, True)
+                CountWords.distrCountWords1
+                  `cast`
+                (<[Control.Distributed.Process.Internal.Types.NodeId]>_R
+                 ->_R <Data.Map.Base.Map GHC.Base.String GHC.Base.String>_R
+                 ->_R Trans
+                          (<Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                           ->_R Sym (GHC.Types.NTCo:IO[0]
+                                         <Data.Map.Base.Map GHC.Base.String GHC.Types.Int>_R))
+                          (Trans
+                               (Sym (Control.Monad.Trans.Reader.NTCo:ReaderT[0]
+                                         <Control.Distributed.Process.Internal.Types.LocalProcess>_R
+                                         <GHC.Types.IO>_R
+                                         <Data.Map.Base.Map GHC.Base.String GHC.Types.Int>_N))
+                               (Sym (Control.Distributed.Process.Internal.Types.NTCo:Process[0]) <Data.Map.Base.Map
+                                                                                                    GHC.Base.String
+                                                                                                    GHC.Types.Int>_N))) -}
+913a197963fc3210832800542fd3e61f
+  distrCountWords1 ::
+    [Control.Distributed.Process.Internal.Types.NodeId]
+    -> Data.Map.Base.Map GHC.Base.String GHC.Base.String
+    -> Control.Distributed.Process.Internal.Types.LocalProcess
+    -> GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.Map.Base.Map GHC.Base.String GHC.Types.Int #)
+  {- Arity: 4,
+     Unfolding: (MonoDistrMapReduce.distrMapReduce1
+                   CountWords.distrCountWords2) -}
+a2bdd03da5408fba27ae572388a1cee4
+  distrCountWords10 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld,
+          Data.ByteString.Lazy.Internal.ByteString #)
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case GHC.Prim.noDuplicate# s of s' { DEFAULT ->
+                 case GHC.Prim.newPinnedByteArray#
+                        @ GHC.Prim.RealWorld
+                        32752
+                        s' of ds { (#,#) ipv ipv1 ->
+                 (# ipv, Data.ByteString.Lazy.Internal.Empty #) } }) -}
+240dd190cbd6739aa538253b8a01166c
+  distrCountWords2 ::
+    Control.Distributed.Static.Closure
+      (MapReduce.MapReduce
+         GHC.IO.FilePath
+         CountWords.Document
+         CountWords.Word
+         CountWords.Frequency
+         CountWords.Frequency)
+  {- Unfolding: (case GHC.IO.unsafeDupablePerformIO
+                        @ Data.ByteString.Lazy.Internal.ByteString
+                        CountWords.distrCountWords10
+                          `cast`
+                        (Sym (GHC.Types.NTCo:IO[0]
+                                  <Data.ByteString.Lazy.Internal.ByteString>_R)) of dt { DEFAULT ->
+                 Control.Distributed.Static.Closure
+                   @ (MapReduce.MapReduce
+                        GHC.IO.FilePath
+                        CountWords.Document
+                        CountWords.Word
+                        CountWords.Frequency
+                        CountWords.Frequency)
+                   CountWords.distrCountWords3
+                     `cast`
+                   (Sym (Control.Distributed.Static.NTCo:Static[0]
+                             <Data.ByteString.Lazy.Internal.ByteString
+                              -> MapReduce.MapReduce
+                                   [GHC.Types.Char]
+                                   [GHC.Types.Char]
+                                   [GHC.Types.Char]
+                                   GHC.Types.Int
+                                   GHC.Types.Int>_P))
+                   dt }) -}
+21c367a6b80929e552a497a16568e3c5
+  distrCountWords3 :: Control.Distributed.Static.StaticLabel
+  {- Unfolding: (Control.Distributed.Static.StaticApply
+                   CountWords.distrCountWords7
+                   CountWords.distrCountWords4) -}
+4d452c292e403772120aed15d403bfc5
+  distrCountWords4 :: Control.Distributed.Static.StaticLabel
+  {- Unfolding: (Control.Distributed.Static.StaticApply
+                   Control.Distributed.Process.Internal.Closure.BuiltIn.returnCP1
+                   CountWords.distrCountWords5) -}
+f4292335f68c049ea7d8c3f7a282d83c
+  distrCountWords5 :: Control.Distributed.Static.StaticLabel
+  {- Unfolding: (Control.Distributed.Static.StaticLabel
+                   CountWords.distrCountWords6) -}
+2ef923c9a736ff5638bb9528b4179718
+  distrCountWords6 :: GHC.Base.String
+  {- Unfolding: (case Control.DeepSeq.$fNFDataArray_$crnf1
+                        @ GHC.Types.Char
+                        Control.DeepSeq.$fNFDataChar_$crnf
+                          `cast`
+                        (Sym (Control.DeepSeq.NTCo:NFData[0] <GHC.Types.Char>_N))
+                        CountWords.__remoteTable_x of wild { () ->
+                 CountWords.__remoteTable_x }) -}
+c428f293b6c7099a7e1f5ff838924e17
+  distrCountWords7 :: Control.Distributed.Static.StaticLabel
+  {- Unfolding: (Control.Distributed.Static.StaticApply
+                   Control.Distributed.Static.closureApply8
+                   CountWords.distrCountWords8) -}
+9473ff3f44c6c9c33faf3d5d394ad0e3
+  distrCountWords8 :: Control.Distributed.Static.StaticLabel
+  {- Unfolding: (Control.Distributed.Static.StaticLabel
+                   CountWords.distrCountWords9) -}
+a49f4e476b025e94a671fe694f6ec166
+  distrCountWords9 :: GHC.Base.String
+  {- Unfolding: (case Control.DeepSeq.$fNFDataArray_$crnf1
+                        @ GHC.Types.Char
+                        Control.DeepSeq.$fNFDataChar_$crnf
+                          `cast`
+                        (Sym (Control.DeepSeq.NTCo:NFData[0] <GHC.Types.Char>_N))
+                        CountWords.__remoteTable_x1 of wild { () ->
+                 CountWords.__remoteTable_x1 }) -}
+a782e812300600865e39f13adc0d2d28
+  localCountWords ::
+    Data.Map.Base.Map GHC.IO.FilePath CountWords.Document
+    -> Data.Map.Base.Map CountWords.Word CountWords.Frequency
+  {- Arity: 1,
+     Unfolding: (MapReduce.localMapReduce
+                   @ GHC.IO.FilePath
+                   @ CountWords.Word
+                   @ CountWords.Document
+                   @ CountWords.Frequency
+                   @ CountWords.Frequency
+                   GHC.Classes.$fOrd[]_$s$fOrd[]1
+                   CountWords.countWords) -}
+"SPEC/CountWords sum @ Frequency" [ALWAYS] forall $dNum :: GHC.Num.Num
+                                                             CountWords.Frequency
+  GHC.List.sum @ GHC.Types.Int $dNum = CountWords.$ssum
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

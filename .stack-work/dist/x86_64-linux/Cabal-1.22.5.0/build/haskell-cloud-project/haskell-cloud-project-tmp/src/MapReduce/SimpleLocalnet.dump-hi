@@ -1,0 +1,203 @@
+
+==================== FINAL INTERFACE ====================
+2017-04-05 15:43:12.545394 UTC
+
+interface main@main:Main 7103
+  interface hash: b483cae60f7a777fa7712ef6fbf034d2
+  ABI hash: ba2201f6d7a47c5f087e87cacd6d3c0d
+  export-list hash: 47607d9212372c41a31f1d72ec94424f
+  orphan hash: 85d0a23e9cd2466d05cedb92a79828e5
+  flag hash: 1f08e9358396fdc978cd80d430f7dd8c
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.main
+module dependencies: CountWords MapReduce MonoDistrMapReduce
+                     PolyDistrMapReduce
+package dependencies: array-0.5.1.0@array_67iodizgJQIIxYVTp4emlA
+                      base-4.8.2.0 binary-0.7.5.0@binar_3uXFWMoAGBg0xKP9MHKRwi
+                      bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6
+                      containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU
+                      data-accessor-0.2.2.7@dataa_Hzzw7HtnPRc9zDbsSXo8GC
+                      deepseq-1.4.1.1@deeps_6vMKxt5sPFR0XsbRWvvq59
+                      distributed-process-0.6.6@distr_9VZaEnFgXxwKrMu3maGgik
+                      distributed-static-0.3.5.0@distr_JJqLBLOCLpw71ShSeQFdQF
+                      distributed-process-simplelocalnet-0.2.3.3@distr_Jkqe7bq44iUBGLjSK2HWqa
+                      exceptions-0.8.3@excep_BEih2K3eMGTE4cg5iulra8 ghc-prim-0.4.0.0
+                      hashable-1.2.4.0@hasha_EalUWgp8NarBYWPbvYAD8I integer-gmp-1.0.0.0
+                      mtl-2.2.1@mtl_Aue4leSeVkpKLsfHIV51E8
+                      network-transport-tcp-0.5.1@netwo_1QrsYfLe4VdLcC6DSKYh5A
+                      network-2.6.3.1@netwo_4FL8hbDqfKm3Q9HV1QK1xw
+                      network-transport-0.4.4.0@netwo_6bCeDA9MYREG46JvDrzSZS
+                      network-multicast-0.1.2@netwo_Bd5lPwOQBigBWGZawtdHoo
+                      pretty-1.1.2.0@prett_JItwetRppk1H5Uq3xbjDGC
+                      random-1.1@rando_9Kgekc9yEaLHLNUuw6paWL
+                      rank1dynamic-0.3.3.0@rank1_GXsj45YFP8FHL10Mvwk235
+                      stm-2.4.4.1@stm_EyxFXFfnfY05IrjGaqCxeD
+                      syb-0.6@syb_4kccWaTe3QZLxAMQYKgEyE template-haskell-2.10.0.0
+                      text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne
+                      time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn
+                      transformers-0.4.2.0@trans_GZTjP9K5WFq01xC9BAGQpF
+orphans: base-4.8.2.0:GHC.Base base-4.8.2.0:GHC.Float
+         binary-0.7.5.0@binar_3uXFWMoAGBg0xKP9MHKRwi:Data.Binary.Generic
+         bytestring-0.10.6.0@bytes_6VWy06pWzJq9evDvK2d4w6:Data.ByteString.Builder
+         hashable-1.2.4.0@hasha_EalUWgp8NarBYWPbvYAD8I:Data.Hashable.Generic
+         network-2.6.3.1@netwo_4FL8hbDqfKm3Q9HV1QK1xw:Network.Socket
+         stm-2.4.4.1@stm_EyxFXFfnfY05IrjGaqCxeD:Control.Monad.STM
+         syb-0.6@syb_4kccWaTe3QZLxAMQYKgEyE:Data.Generics.Instances
+         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text
+         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text.Lazy
+         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text.Show
+         time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time.Calendar.Gregorian
+         time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time.Format.Parse
+         time-1.5.0.1@time_FTheb6LSxyX1UABIbBXRfn:Data.Time.LocalTime.LocalTime
+         transformers-0.4.2.0@trans_GZTjP9K5WFq01xC9BAGQpF:Control.Monad.Trans.Error
+family instance modules: base-4.8.2.0:Control.Applicative
+                         base-4.8.2.0:Data.Either base-4.8.2.0:Data.Functor.Identity
+                         base-4.8.2.0:Data.Monoid base-4.8.2.0:Data.Type.Equality
+                         base-4.8.2.0:Data.Void base-4.8.2.0:GHC.Exts
+                         base-4.8.2.0:GHC.Generics
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.IntMap.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.IntSet.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map.Base
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Sequence
+                         containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Set.Base
+                         distributed-process-0.6.6@distr_9VZaEnFgXxwKrMu3maGgik:Control.Distributed.Process.Internal.Types
+                         distributed-process-0.6.6@distr_9VZaEnFgXxwKrMu3maGgik:Control.Distributed.Process.Management.Internal.Table
+                         distributed-process-0.6.6@distr_9VZaEnFgXxwKrMu3maGgik:Control.Distributed.Process.Management.Internal.Trace.Types
+                         distributed-process-0.6.6@distr_9VZaEnFgXxwKrMu3maGgik:Control.Distributed.Process.Management.Internal.Types
+                         network-transport-0.4.4.0@netwo_6bCeDA9MYREG46JvDrzSZS:Network.Transport
+                         pretty-1.1.2.0@prett_JItwetRppk1H5Uq3xbjDGC:Text.PrettyPrint.HughesPJ
+                         template-haskell-2.10.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text
+                         text-1.2.2.1@text_HmqVQnZSpjaC156ABqPhne:Data.Text.Lazy
+import  -/  base-4.8.2.0:Data.Traversable 7576318f4ef8587ad947f87012b65abf
+import  -/  base-4.8.2.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.2.0:GHC.IO bb5b81adcea33b14bd4abe16d7dde45f
+import  -/  base-4.8.2.0:GHC.List 0c736920522bbd14b770342776012ab6
+import  -/  base-4.8.2.0:Prelude 694dcaf039efe62df1c44834e2dbd2fb
+import  -/  base-4.8.2.0:System.Environment ba6e36000c8274703cf7786fbe8d0f6c
+import  -/  base-4.8.2.0:System.IO 0248c1e850b7ea124cf7a2e1669ebf67
+import  -/  containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map 1800ccac43fd924c376b60eac12f4d04
+import  -/  containers-0.5.6.2@conta_2C3ZI8RgPO2LBMidXKTvIU:Data.Map.Base 642e37808d03e24efbe8e8ff1336f343
+import  -/  distributed-process-0.6.6@distr_9VZaEnFgXxwKrMu3maGgik:Control.Distributed.Process 86f028da50d3c701496e9b31d4794722
+import  -/  distributed-process-0.6.6@distr_9VZaEnFgXxwKrMu3maGgik:Control.Distributed.Process.Node 3901025381698a6519b874b1cfac0a38
+import  -/  distributed-static-0.3.5.0@distr_JJqLBLOCLpw71ShSeQFdQF:Control.Distributed.Static 298d1d8e8cb149ff7c7e81c09550a87c
+import  -/  distributed-process-simplelocalnet-0.2.3.3@distr_Jkqe7bq44iUBGLjSK2HWqa:Control.Distributed.Process.Backend.SimpleLocalnet d6b213ea624b0071db65699801eaca15
+import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
+import  -/  CountWords 3ef28eb4d995793216dcfd91b8fe8eee
+  exports: 7403fbf17783311530e7db1fbccdad31
+  Document 5467e73aac74e1ccac7d2848641c6b0b
+  __remoteTable f3b798d8f5defb7c6237a1a2836e267d
+  distrCountWords 176f7811a470f36ee09880a683918dab
+  localCountWords a782e812300600865e39f13adc0d2d28
+import  -/  MonoDistrMapReduce 40da236f1b7cc68929c39ec2f8ba64a6
+  exports: 79f62a0b71e4ccfccf707653a6e6a91c
+  __remoteTable 79adec56d67f86c5ba935deb0865ab19
+import  -/  PolyDistrMapReduce 77d24c434a1daffd44745852d824e153
+  exports: 513ed597a4d1bc3acb10ec09ed39af68
+  __remoteTable 18350d554cd871c42f109c006eee1944
+import  -/  transformers-0.4.2.0@trans_GZTjP9K5WFq01xC9BAGQpF:Control.Monad.IO.Class 37487179a2f5eb2ea7922b911abcae56
+addDependentFile "/home/kanika/.stack/programs/x86_64-linux/ghc-7.10.3/lib/ghc-7.10.3/include/ghcversion.h"
+addDependentFile ".stack-work/dist/x86_64-linux/Cabal-1.22.5.0/build/autogen/cabal_macros.h"
+addDependentFile "/usr/include/stdc-predef.h"
+1d842d02bf064e046ab12b677c4bf0fc
+  $sfromList ::
+    [(GHC.IO.FilePath, a)] -> Data.Map.Base.Map GHC.IO.FilePath a
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ @ a3 ds :: [(GHC.IO.FilePath, a3)] ->
+                 case ds of wild {
+                   [] -> Data.Map.Base.Tip @ GHC.IO.FilePath @ a3
+                   : ds1 ds2
+                   -> case ds1 of wild1 { (,) kx x ->
+                      case ds2 of wild2 {
+                        []
+                        -> case kx of dt { DEFAULT ->
+                           Data.Map.Base.Bin
+                             @ GHC.IO.FilePath
+                             @ a3
+                             1
+                             dt
+                             x
+                             (Data.Map.Base.Tip @ GHC.IO.FilePath @ a3)
+                             (Data.Map.Base.Tip @ GHC.IO.FilePath @ a3) }
+                        : ipv ipv1
+                        -> case ipv of wild3 { (,) ky ds3 ->
+                           case GHC.Classes.$fOrd[]_$s$ccompare1 kx ky of wild4 {
+                             DEFAULT
+                             -> case kx of dt { DEFAULT ->
+                                Main.$sfromList1
+                                  @ a3
+                                  (Data.Map.Base.Bin
+                                     @ GHC.IO.FilePath
+                                     @ a3
+                                     1
+                                     dt
+                                     x
+                                     (Data.Map.Base.Tip @ GHC.IO.FilePath @ a3)
+                                     (Data.Map.Base.Tip @ GHC.IO.FilePath @ a3))
+                                  wild2 }
+                             GHC.Types.LT
+                             -> case kx of dt { DEFAULT ->
+                                Main.$wpoly_go10
+                                  @ a3
+                                  1
+                                  (Data.Map.Base.Bin
+                                     @ GHC.IO.FilePath
+                                     @ a3
+                                     1
+                                     dt
+                                     x
+                                     (Data.Map.Base.Tip @ GHC.IO.FilePath @ a3)
+                                     (Data.Map.Base.Tip @ GHC.IO.FilePath @ a3))
+                                  wild2 } } } } } }) -}
+94a6085c68688d8b508acb7cfa69e572
+  $sfromList1 ::
+    Data.Map.Base.Map GHC.IO.FilePath a1
+    -> [(GHC.IO.FilePath, a1)] -> Data.Map.Base.Map GHC.IO.FilePath a1
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+ff7b5d3bee7d7610109fba335ba910d0
+  $sinsert_$sgo10 ::
+    GHC.IO.FilePath
+    -> a1
+    -> Data.Map.Base.Map GHC.IO.FilePath a1
+    -> Data.Map.Base.Map GHC.IO.FilePath a1
+  {- Arity: 3, Strictness: <S,1*U><L,U><S,1*U> -}
+824e28976047c5224aec6ab969bf2121
+  $wpoly_go10 ::
+    GHC.Prim.Int#
+    -> Data.Map.Base.Map GHC.IO.FilePath a
+    -> [(GHC.IO.FilePath, a)]
+    -> Data.Map.Base.Map GHC.IO.FilePath a
+  {- Arity: 3, Strictness: <L,U><S,1*U><S,1*U>, Inline: [0] -}
+ee6590a2ab0ffaa5074d93f2d3fc4c03
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
+e3bd864fe81295cabb6b36ca45539f6f
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <L,U> -}
+20688fff09df92565d9be8c5f0313411
+  main2 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R))) -}
+"SPEC/Main fromList @ FilePath _" [ALWAYS] forall @ a3
+                                                  $dOrd :: GHC.Classes.Ord GHC.IO.FilePath
+  Data.Map.Base.fromList @ [GHC.Types.Char] @ a3 $dOrd
+  = Main.$sfromList @ a3
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+
