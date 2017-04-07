@@ -17,6 +17,15 @@
 #  location: "./custom-snapshot.yaml"
 resolver: lts-6.30
 
+
+docker:
+  enable:yes
+
+image:
+  container:
+    name: mapreduce-haskell-project
+    base: fpco/stack-run
+
 # User packages to be built.
 # Various formats can be used as shown in the example below.
 #
